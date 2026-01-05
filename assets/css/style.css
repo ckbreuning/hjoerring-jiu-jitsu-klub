@@ -1,3 +1,13 @@
 body {
     margin: 0;
 }
+
+:root {
+    --red: rgb(238, 32, 45);
+    --eerieBlack: rgb(31, 27, 28);
+    --white: rgb(255, 255, 255);
+    --blackOlive: rgb(60, 60, 60);
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+}
