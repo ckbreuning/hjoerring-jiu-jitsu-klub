@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+}
+
+/* Variables */
+:root {
+    --red: rgb(238, 32, 45);
+    --eerieBlack: rgb(31, 27, 28);
+    --white: rgb(255, 255, 255);
+    --blackOlive: rgb(60, 60, 60);
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+}
+
+/* General */
+img {
+    display: block;
+}
+
+/* Navigation til Telefon */
+.nav-telefon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--smSpacer);
+    background: var(--eerieBlack);
+    height: 100px;
+}
+
+.nav-telefon img {
+    max-height: 75px;
+}
+
+/* Icons i Navigation */
+.burger {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: var(--white);
+    transition: opacity 0.2s ease;
+}
+
+.icon-menu {
+    opacity: 1;
+}
+
+.icon-x {
+    opacity: 0;
+}
+
+#toggle:checked+nav .icon-menu {
+    opacity: 0;
+}
+
+#toggle:checked+nav .icon-x {
+    opacity: 1;
+}
+
+/* Checkbox */
+input {
+    display: none;
+}
+
+/* Bruger Menu */
+.burger-menu {
+    position: fixed;
+    top: 100px;
+    height: calc(100vh - 100px);
+    right: -100%;
+    width: 100%;
+    background-color: var(--eerieBlack);
+    /* padding: var(--smSpacer); */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+}
+
+.burger-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#toggle:checked~.burger-menu {
+    right: 0;
+}
+
+.side-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu>li {
+    border-bottom: 1px solid var(--red);
+}
+
+.li-pad {
+    padding: 10px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.toggle-knap {
+    padding: 10px;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+/* Drop-down Menu i Burger Menu  */
+.drop-menu {
+    list-style: none;
+    background: var(--red);
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 400;
+    transition: max-height 0.3s ease;
+}
+
+.drop-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white);
+    border-top: 1px solid rgba(31, 27, 28, 0.1);
+    font-size: 1.25rem;
+}
+
+.dropdown input:checked~.drop-menu {
+    max-height: 500px;
+}
+
+/* Drop-down Menu Animation */
+.toggle-knap {
+    padding: 0;
+}
+
+.toggle-knap::after {
+    content: "+";
+    color: var(--white);
+    font-size: 2rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.dropdown>input:checked~.menu-row .toggle-knap::after {
+    transform: rotate(45deg);
+}
+
+/* Footer til Telefon */
+.footer-telefon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: var(--smSpacer);
+    background: var(--eerieBlack);
+    color: var(--white);
+}
+
+.footer-telefon a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-telefon img {
+    max-height: 100px;
+}
+
+.footer-telefon h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.tider {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dag {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--smSpacer)
+}
+
+.icon-a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-a i {
+    color: var(--red);
+}
+
+.some {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.some i {
+    font-size: 3rem;
+}
+
+/* Copyright i Footer til Telefon */
+.copyright {
+    background: var(--red);
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
+}
