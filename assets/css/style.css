@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    line-height: 150%;
 }
 
 /* Variables */
@@ -19,8 +20,13 @@
     --xlSpacer: 75px;
 }
 
+/* General */
+img {
+    display: block;
+}
+
 /* Navigation til Telefon */
-nav.telefon {
+.nav-telefon {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,15 +35,15 @@ nav.telefon {
     height: 100px;
 }
 
-.telefon img {
+.nav-telefon img {
     max-height: 75px;
 }
 
 /* Icons i Navigation */
 .burger {
     position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +54,7 @@ nav.telefon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--white);
     transition: opacity 0.2s ease;
 }
@@ -166,4 +172,75 @@ input {
 
 .dropdown>input:checked~.menu-row .toggle-knap::after {
     transform: rotate(45deg);
+}
+
+/* Footer til Telefon */
+.footer-telefon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: var(--smSpacer);
+    background: var(--eerieBlack);
+    color: var(--white);
+}
+
+.footer-telefon a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-telefon img {
+    max-height: 100px;
+}
+
+.footer-telefon h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.tider {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dag {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--smSpacer)
+}
+
+.icon-a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-a i {
+    color: var(--red);
+}
+
+.some {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.some i {
+    font-size: 3rem;
+}
+
+/* Copyright i Footer til Telefon */
+.copyright {
+    background: var(--red);
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
 }
