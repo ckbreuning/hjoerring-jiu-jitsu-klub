@@ -174,6 +174,46 @@ input {
     transform: rotate(45deg);
 }
 
+/* Header image */
+
+.wamaheader {
+    max-width: 100%;
+}
+
+/* Main */
+
+h1 {
+    text-align: center;
+    padding: var(--smSpacer);
+}
+
+/* Klub kort */
+
+.clubcard1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--smSpacer);
+    height: 130px;
+    max-width: 80%;
+    background-color: rgb(224, 224, 224);
+    padding: var(--smSpacer);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--blackOlive);
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
 /* Footer til Telefon */
 .footer-telefon {
     display: flex;
