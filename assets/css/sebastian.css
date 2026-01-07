@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
+
+}
+
+p {
+    font-size: 16px;
 }
 
 /* Variables */
@@ -188,6 +193,49 @@ h1 {
     text-align: center;
     padding: var(--smSpacer);
 }
+
+.klubtekst {
+    padding: var(--smSpacer);
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        padding-top: var(--smSpacer);
+    }
+}
+
+.gradueringtekst {
+    padding: 0px 25px 25px 25px;
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+
+    img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        object-position: 0 100%;
+        padding-top: var(--smSpacer);
+        padding-bottom: var(--smSpacer);
+    }
+
+    .sommerlejr2 {
+        object-position: center;
+        padding-top: var(--smSpacer);
+        padding-bottom: var(--smSpacer);
+    }
+}
+
+.toptext {
+    padding-top: 0px;
+}
+
 
 /* Klub kort */
 a {
