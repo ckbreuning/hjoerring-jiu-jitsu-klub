@@ -1,6 +1,7 @@
+/* Typografi */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Styling */
 * {
     margin: 0;
     padding: 0;
@@ -25,17 +26,21 @@ img {
     display: block;
 }
 
+input {
+    display: none;
+}
+
 /* Navigation til Telefon */
-.nav-telefon {
+.navi {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--smSpacer);
+    padding: 0 var(--smSpacer);
     background: var(--eerieBlack);
     height: 100px;
 }
 
-.nav-telefon img {
+.navi img {
     max-height: 75px;
 }
 
@@ -75,12 +80,7 @@ img {
     opacity: 1;
 }
 
-/* Checkbox */
-input {
-    display: none;
-}
-
-/* Bruger Menu */
+/* Burger Menu */
 .burger-menu {
     position: fixed;
     top: 100px;
@@ -88,7 +88,6 @@ input {
     right: -100%;
     width: 100%;
     background-color: var(--eerieBlack);
-    /* padding: var(--smSpacer); */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -175,27 +174,31 @@ input {
 }
 
 /* Footer til Telefon */
-.footer-telefon {
+footer {
+    background: var(--eerieBlack);
+
+}
+
+.foot {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: var(--smSpacer);
-    background: var(--eerieBlack);
     color: var(--white);
 }
 
-.footer-telefon a {
+.foot a {
     text-decoration: none;
     color: var(--white);
 }
 
-.footer-telefon img {
+.foot img {
     max-height: 100px;
 }
 
-.footer-telefon h3 {
+.foot h3 {
     font-size: 1rem;
     font-weight: 400;
     text-decoration: underline;
@@ -212,17 +215,7 @@ input {
 .dag {
     display: flex;
     justify-content: space-between;
-    gap: var(--smSpacer)
-}
-
-.icon-a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.icon-a i {
-    color: var(--red);
+    gap: var(--smSpacer);
 }
 
 .some {
@@ -237,10 +230,146 @@ input {
     font-size: 3rem;
 }
 
-/* Copyright i Footer til Telefon */
+/* Copyright i Footer */
 .copyright {
     background: var(--red);
     text-align: center;
-    padding: 10px;
     color: var(--white);
+}
+
+/* Fjern Nav & Copyright til Desktop */
+.copyright-desk {
+    display: none;
+}
+
+
+.nav-desktop {
+    display: none;
+}
+
+/* Utility */
+.active {
+    border-bottom: 2px solid var(--red);
+}
+
+@media screen and (min-width:768px) {
+    .copyright-desk {
+        display: block;
+    }
+
+    .copyright-telefon {
+        display: none;
+    }
+
+    /* Footer til Desktop */
+    .foot {
+        display: grid;
+        grid-template-areas:
+            "info img some"
+            "info img some";
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .foot a {
+        grid-area: img;
+    }
+
+    .foot img {
+        max-height: 125px;
+    }
+
+    .foot h3 {
+        text-align: left;
+    }
+
+    .info {
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tider {
+        max-width: 220px;
+    }
+
+    .some {
+        grid-area: some;
+        flex-direction: column;
+        width: 220px;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Navigation til Desktop*/
+    .navi {
+        display: flex;
+        height: 125px;
+    }
+
+    .navi img {
+        max-height: 90px;
+    }
+
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-menu>li {
+        position: relative;
+    }
+
+    .nav-menu>li>a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px;
+        font-size: 1.125rem;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 235px;
+        background-color: var(--eerieBlack);
+        list-style: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 10px;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .dropdown-menu li a:hover {
+        background: var(--red);
+    }
+
+    .dropdown-desk:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-desk:hover>a,
+    .nav-menu>li>a:hover {
+        color: var(--red);
+    }
+
+    .nav-telefon {
+        display: none;
+    }
 }
