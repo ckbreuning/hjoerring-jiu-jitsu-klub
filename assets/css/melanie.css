@@ -1,1 +1,190 @@
 
+/* Variables */
+:root {
+    --red: rgb(238, 32, 45);
+    --eerieBlack: rgb(31, 27, 28);
+    --white: rgb(255, 255, 255);
+    --blackOlive: rgb(60, 60, 60);
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+}
+
+/* Typography */
+
+h1{
+    justify-self: center;
+    padding:  var(--mdSpacer);
+    font-size: 50px;
+}
+
+p, li{
+    font-size: 24px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+span{
+    font-weight: bold;
+}
+
+main{
+      padding: 0px var(--xlSpacer);
+      justify-content: center;
+
+}
+
+/* Udstyr */
+
+.hero img{
+   width: 100%;
+   object-fit: cover;
+   height: 50vh;
+}
+
+
+.usection1{
+    display: flex;
+   flex-direction: row;
+   margin-bottom: var(--xlSpacer);
+}
+
+.usection1 img{
+    max-width: 50%;
+    margin-top: -55px;
+}
+
+.usection article {
+    max-width: 500px;
+
+}
+
+
+.usection2{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: var(--mdSpacer);
+}
+
+.usection2 h2{
+text-align: center;
+font-size: 35px;
+}
+
+.usection2 article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    border: 1px solid black;
+    padding: var(--smSpacer);
+    border-radius: 10px;
+    width: 650px !important;
+   
+}
+
+.usection2 article p{
+    margin-top: var(--smSpacer);
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: var(--mdSpacer);
+}
+
+.usection2 article a{
+    text-decoration: none;
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    margin-top: var(--smSpacer);
+    padding: 5px var(--smSpacer);
+    text-align: center;
+    max-width: 200px;
+    margin-top: auto;
+}
+
+/* Instruktøre */
+
+.in{
+    display: flex;
+    margin-top: var(--mdSpacer);
+   
+}
+
+.in img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.in figcaption{
+    display: flex;
+    justify-self: center;
+    margin-top: var(--smSpacer);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Kontakt */
+
+form{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#bes, #navn, #mail, #emne, #tlf {
+ border: 1px solid black;
+}
+
+@media (max-width:768px){
+
+    /* Udstyr */
+    
+    .usection1{
+       display: flex;
+       flex-direction: column;
+       
+    }
+
+    .usection1 img{
+        margin: 0;
+        align-self: center;
+        max-width: 80%;
+    }
+
+      .usection2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--smSpacer);
+        
+        
+    }
+
+    .usection2 article{
+        max-width: 100%;
+    
+    }
+
+    /* Intruktøre */
+
+    .in{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+@media (max-width:375px){
+  
+}
+
+
+
+
