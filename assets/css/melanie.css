@@ -68,6 +68,7 @@ main{
     align-items: stretch;
     margin-top: var(--mdSpacer);
     margin-bottom: var(--mdSpacer);
+    gap: 1rem;
 }
 
 .usection2 h2{
@@ -149,11 +150,12 @@ form{
        flex-direction: column;
        
     }
+    
 
     .usection1 img{
         margin: 0;
         align-self: center;
-        max-width: 80%;
+        max-width: 50%;
     }
 
       .usection2{
@@ -163,6 +165,14 @@ form{
         gap: var(--smSpacer);
         
         
+    }
+
+    .usection2 p {
+        font-size: 20px;
+    }
+
+    .usection2 h2{
+        font-size: 24px;
     }
 
     .usection2 article{
@@ -177,13 +187,6 @@ form{
         flex-direction: column;
     }
 
-}
-
-
-
-
-@media (max-width:375px){
-  
 }
 
 
