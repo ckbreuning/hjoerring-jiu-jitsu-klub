@@ -10,6 +10,105 @@
 </head>
 
 <body>
+    <header>
+         <nav class="navi nav-telefon">
+        <a href="#forside">
+            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+        </a>
+        <label for="toggle" class="burger">
+            <i class="fa-solid fa-bars icon-menu"></i>
+            <i class="fa-solid fa-xmark icon-x"></i>
+        </label>
+    </nav>
+
+    <div class="burger-menu">
+        <ul class="side-menu">
+            <li class="dropdown">
+                <input type="checkbox" id="toggle-klub">
+                <div class="menu-row">
+                    <a href="./omKlubben.html">Om Klubben</a>
+                    <label for="toggle-klub" class="toggle-knap"></label>
+                </div>
+                <ul class="drop-menu">
+                    <li><a href="./intruktoerer.html">Instruktører</a></li>
+                    <li><a href="./tosenryu.html">Tosenryu</a></li>
+                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <input type="checkbox" id="toggle-hold">
+                <div class="menu-row">
+                    <a href="./traening.html">Hold og Træning</a>
+                    <label for="toggle-hold" class="toggle-knap"></label>
+                </div>
+                <ul class="drop-menu">
+                    <li><a href="./udstyr.html">Udstyr</a></li>
+                    <li><a href="./medlemskab.html">Medlemskab</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <input type="checkbox" id="toggle-jj">
+
+                <div class="menu-row">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu</a>
+                    <label for="toggle-jj" class="toggle-knap"></label>
+                </div>
+                <ul class="drop-menu">
+                    <li><a href="./budoregler.html">Budoregler</a></li>
+                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                </ul>
+            </li>
+            <li class="li-pad"><a href="./arrangementer.html">Arrangementer</a></li>
+            <li class="li-pad"><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <!-- Navigation til Desktop -->
+    <nav class="navi nav-desktop">
+        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
+        <ul class="nav-menu">
+            <li class="dropdown-desk">
+                <!-- Tilføj class="active" til den aktive side  -->
+                <a href="./omKlubben.html">Om Klubben
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="./intruktoerer.html">Instruktører</a></li>
+                    <li><a href="./tosenryu.html">Tosenryu</a></li>
+                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-desk">
+                <a href="./traening.html">Hold og Træning
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="./udstyr.html">Udstyr</a></li>
+                    <li><a href="./medlemskab.html">Medlemskab</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-desk">
+                <a href="#">Om Jiu-Jitsu
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu three">
+                    <li><a href="./budoregler.html">Budoregler</a></li>
+                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                </ul>
+            </li>
+            <li><a href="./arrangementer.html">Arrangementer</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="./assets/img/klubben.png" alt="Billede af klubben og dens medlemmer">
+        <h1>Hjørring Jiu-Jitsu Klub</h1>
+        <div class="border"></div>
+    </header>
+    </header>
     <main>
         <h1>Kontakt</h1>
         <p>Hvis du har spørgsmål, ønsker kontakt eller gerne vil starte, så udfyld venligst kontaktformularen.</p>

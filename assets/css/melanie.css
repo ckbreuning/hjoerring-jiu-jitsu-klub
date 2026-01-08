@@ -67,6 +67,8 @@ main {
     justify-content: space-between;
     align-items: stretch;
     margin-top: var(--mdSpacer);
+    margin-bottom: var(--mdSpacer);
+    gap: 1rem;
 }
 
 .usection2 h2 {
@@ -196,11 +198,12 @@ input[type="submit"] {
         flex-direction: column;
 
     }
+    
 
     .usection1 img {
         margin: 0;
         align-self: center;
-        max-width: 80%;
+        max-width: 50%;
     }
 
     .usection2 {
