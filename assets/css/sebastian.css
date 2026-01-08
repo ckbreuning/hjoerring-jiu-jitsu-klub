@@ -236,6 +236,41 @@ h1 {
     padding-top: 0px;
 }
 
+.medlemskabtekst {
+    padding: 0px 15px 15px 15px;
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        padding-top: var(--smSpacer);
+    }
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.medlemimg {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    object-position: 0 100%;
+    padding-top: var(--smSpacer);
+    padding-bottom: var(--smSpacer);
+}
+
+.medlemskabheader {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    object-position: 0 100%;
+    padding-bottom: var(--smSpacer);
+}
 
 /* Klub kort */
 a {
