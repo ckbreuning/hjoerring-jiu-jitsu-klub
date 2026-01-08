@@ -18,7 +18,7 @@ h1{
     font-size: 50px;
 }
 
-p, li{
+.usection1, .usection2 p, li{
     font-size: 24px;
 }
 
@@ -67,6 +67,7 @@ main{
     justify-content: space-between;
     align-items: stretch;
     margin-top: var(--mdSpacer);
+    margin-bottom: var(--mdSpacer);
 }
 
 .usection2 h2{
