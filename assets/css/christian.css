@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --red: rgb(238, 32, 45);
+    --eerieBlack: rgb(31, 27, 28);
+    --white: rgb(255, 255, 255);
+    --blackOlive: rgb(60, 60, 60);
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+}
+
+/* Styling */
+h1 {
+    font-size: 1.875rem;
+    text-align: center;
+    color: var(--blackOlive);
+    padding: 10px 10px 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--blackOlive);
+    padding: 0;
+}
+
+
+.border {
+    height: 3px;
+    width: 67%;
+    background-color: var(--red);
+    margin: 10px auto 10px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header img {
+    max-height: 510px;
+}
+
+.budo-img {
+    object-position: 0 0;
+}
+
+main p {
+    padding: 0 10px var(--smSpacer);
+    color: var(--blackOlive)
+}
+
+.om-klubben p:last-of-type,
+.om-jiu-jitsu p:last-of-type {
+    padding: 0 10px 5px;
+}
+
+
+main a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--red);
+    font-weight: 700;
+}
+
+.main-a {
+    padding: 10px;
+}
+
+img.side {
+    padding: 5px 10px var(--mdSpacer);
+    height: 310px;
+    object-position: 0 56%;
+}
+
+img.bund {
+    padding: 5px 10px var(--smSpacer);
+    height: 310px;
+    object-position: 0 56%;
+}
+
+/* Accordion */
+.accord {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.accordion details {
+    background: var(--red);
+    color: var(--white);
+}
+
+.accordion summary {
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--smSpacer);
+    font-size: 1.25rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion summary::after {
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    user-select: none;
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.text {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--white);
+    border-right: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    border-left: 2px solid var(--red);
+}
+
+.acc-dag {
+    color: var(--blackOlive);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-dag p {
+    padding: 0;
+}
+
+.acc-pad {
+    padding-bottom: 10px;
+}
+
+.acc-a {
+    color: var(--red);
+    padding: 10px 0 0;
+}
+
+.acc-dag a i {
+    color: var(--blackOlive);
+}
+
+.bold {
+    font-weight: bold;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    img.side,
+    img.bund {
+        height: 510px;
+        object-position: 0 63%;
+    }
+
+    .accordion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav a,
+    nav ul,
+    .foot,
+    main,
+    header {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    img.side,
+    img.bund {
+        height: 710px;
+    }
+}
