@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/melanie.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
          <nav class="navi nav-telefon">
@@ -109,71 +110,34 @@
     </header>
     </header>
     <main>
-    <h1>Kontakt</h1>
-    <p>Hvis du har spørgsmål, ønsker kontakt eller gerne vil starte, så udfyld venligst kontaktformularen.</p>
+        <h1>Kontakt</h1>
+        <p>Hvis du har spørgsmål, ønsker kontakt eller gerne vil starte, så udfyld venligst kontaktformularen.</p>
 
-    <form action="index.html">
+        <form action="index.html">
 
-    <label for="navn">Navn</label>
-    <input type="text" id="navn" name="navn" placeholder="...">
+            <label for="navn">Navn</label>
+            <input type="text" id="navn" name="navn" placeholder="Skriv navn her...">
 
-    <label for="mail">Email</label>
-     <input type="text" id="mail" name="mail" placeholder="...">
-
-         <label for="emne">Emne</label>
-     <input type="text" id="emne" name="emne" placeholder="...">
-
-       <label for="tlf">Telefon nummer</label>
-     <input type="text" id="tlf" name="tlf" placeholder="...">
-   
-
-     <label for="bes">Besked</label>
-     <input type="text" id="bes" name="bes" placeholder="...">
-
-     <input type="button" value="Send">
-     </form>
-
-</main>
- <footer>
-        <div class="foot">
-            <a href="#forside" class="img"><img src="./assets/img/klub_logo_white.png"
-                    alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-            <div class="info">
-                <div class="tider">
-                    <h3>Træningstider</h3>
-                    <div class="dag">
-                        <p>Tirsdag:</p>
-                        <p>18:00 - 20:00</p>
-                    </div>
-                    <div class="dag">
-                        <p>Torsdag:</p>
-                        <p>18:00 - 20:00</p>
-                    </div>
+            <div class="form-row">
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" name="mail" placeholder="Skriv Email her...">
                 </div>
-                <div class="adresse">
-                    <h3>Adresse</h3>
-                    <p>Buen 4, 1. sal, 9800 Hjørring</p>
-                </div>
-                <div class="kontakt">
-                    <h3>Kontakt</h3>
-                    <a href="tel:+45-68-22-31-27">+45 68 22 31 27</a>
+                <div>
+                    <label for="tlf">Telefon nummer</label>
+                    <input type="text" id="tlf" name="tlf" placeholder="Skriv telefonnummer her...">
                 </div>
             </div>
-            <ul class="some">
-                <li><a href="https://www.facebook.com/groups/484235388306687/" target="_blank"><i
-                            class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/hjoerring_jiu_jitsu/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
+            <label for="emne">Emne</label>
+            <input type="text" id="emne" name="emne" placeholder="Hvorfor vil du gerne kontakte os?">
 
-        </div>
-        <div class="copyright copyright-telefon">
-            <p>Copyright Hjørring Jiu-Jitsu klub 2024 </p>
-            <p>© Alle rettigheder forbeholdes</p>
-        </div>
-        <div class="copyright copyright-desk">
-            <p>Copyright Hjørring Jiu-Jitsu klub 2024 © Alle rettigheder forbeholdes</p>
-        </div>
-    </footer>
+            <label for="bes">Besked</label>
+            <textarea id="bes" name="bes" rows="5" placeholder="Skriv tekst her..."></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+
+    </main>
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 /* Variables */
 :root {
     --red: rgb(238, 32, 45);
@@ -12,46 +11,47 @@
 
 /* Typography */
 
-h1{
+h1 {
     justify-self: center;
-    padding:  var(--mdSpacer);
+    padding: var(--mdSpacer);
     font-size: 50px;
 }
 
-.usection1, .usection2 p, li{
+p,
+li {
     font-size: 24px;
 }
 
-ul li{
+ul li {
     list-style-type: none;
 }
 
-span{
+span {
     font-weight: bold;
 }
 
-main{
-      padding: 0px var(--xlSpacer);
-      justify-content: center;
+main {
+    padding: 0px var(--xlSpacer);
+    justify-content: center;
 
 }
 
 /* Udstyr */
 
-.hero img{
-   width: 100%;
-   object-fit: cover;
-   height: 50vh;
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    height: 50vh;
 }
 
 
-.usection1{
+.usection1 {
     display: flex;
-   flex-direction: row;
-   margin-bottom: var(--xlSpacer);
+    flex-direction: row;
+    margin-bottom: var(--xlSpacer);
 }
 
-.usection1 img{
+.usection1 img {
     max-width: 50%;
     margin-top: -55px;
 }
@@ -62,7 +62,7 @@ main{
 }
 
 
-.usection2{
+.usection2 {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -71,12 +71,12 @@ main{
     gap: 1rem;
 }
 
-.usection2 h2{
-text-align: center;
-font-size: 35px;
+.usection2 h2 {
+    text-align: center;
+    font-size: 35px;
 }
 
-.usection2 article{
+.usection2 article {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -85,17 +85,17 @@ font-size: 35px;
     padding: var(--smSpacer);
     border-radius: 10px;
     width: 650px !important;
-   
+
 }
 
-.usection2 article p{
+.usection2 article p {
     margin-top: var(--smSpacer);
     max-width: 500px;
     text-align: center;
     margin-bottom: var(--mdSpacer);
 }
 
-.usection2 article a{
+.usection2 article a {
     text-decoration: none;
     background-color: var(--red);
     color: white;
@@ -109,18 +109,18 @@ font-size: 35px;
 
 /* Instruktøre */
 
-.in{
+.in {
     display: flex;
     margin-top: var(--mdSpacer);
-   
+
 }
 
-.in img{
+.in img {
     border-radius: 50%;
     width: 100%;
 }
 
-.in figcaption{
+.in figcaption {
     display: flex;
     justify-self: center;
     margin-top: var(--smSpacer);
@@ -130,59 +130,99 @@ font-size: 35px;
 }
 
 /* Kontakt */
-
-form{
-    border: 1px solid black;
+form {
+    border: 1px solid var(--eerieBlack);
     display: flex;
     flex-direction: column;
+    padding: 0 var(--smSpacer) var(--smSpacer);
+    margin-bottom: var(--smSpacer);
+    gap: 5px;
 }
 
-#bes, #navn, #mail, #emne, #tlf {
- border: 1px solid black;
+label {
+    font-weight: bold;
+    color: var(--blackOlive);
+    margin: 10px 0 0;
 }
 
-@media (max-width:768px){
+textarea {
+    min-height: 150px;
+    padding: 10px;
+    border: 1px solid var(--eerieBlack) !important;
+}
+
+input[type="text"] {
+    display: block;
+    min-height: 20px;
+    color: var(--blackOlive);
+    padding: 10px;
+    border: 1px solid var(--eerieBlack) !important;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 10px var(--xlSpacer);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--red);
+    margin: var(--smSpacer) auto 0;
+    border: 1px solid var(--eerieBlack);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--smSpacer);
+}
+
+.form-row>div>input[type="text"] {
+    width: 100%;
+}
+
+.form-row>div {
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width:768px) {
 
     /* Udstyr */
-    
-    .usection1{
-       display: flex;
-       flex-direction: column;
-       
+
+    .usection1 {
+        display: flex;
+        flex-direction: column;
+
     }
     
 
-    .usection1 img{
+    .usection1 img {
         margin: 0;
         align-self: center;
         max-width: 50%;
     }
 
-      .usection2{
+    .usection2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: var(--smSpacer);
-        
-        
+
+
     }
 
-    .usection2 p {
-        font-size: 20px;
-    }
-
-    .usection2 h2{
-        font-size: 24px;
-    }
-
-    .usection2 article{
+    .usection2 article {
         max-width: 100%;
-    
+
     }
 
     /* Intruktøre */
 
-    .in{
+    .in {
         display: flex;
         flex-direction: column;
     }
@@ -192,3 +232,4 @@ form{
 
 
 
+@media (max-width:375px) {}
