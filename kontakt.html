@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +8,37 @@
     <link rel="stylesheet" href="./assets/css/melanie.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <main>
-    <h1>Kontakt</h1>
-    <p>Hvis du har spørgsmål, ønsker kontakt eller gerne vil starte, så udfyld venligst kontaktformularen.</p>
+        <h1>Kontakt</h1>
+        <p>Hvis du har spørgsmål, ønsker kontakt eller gerne vil starte, så udfyld venligst kontaktformularen.</p>
 
-    <form action="index.html">
+        <form action="index.html">
 
-    <label for="navn">Navn</label>
-    <input type="text" id="navn" name="navn" placeholder="...">
+            <label for="navn">Navn</label>
+            <input type="text" id="navn" name="navn" placeholder="Skriv navn her...">
 
-    <label for="mail">Email</label>
-     <input type="text" id="mail" name="mail" placeholder="...">
+            <div class="form-row">
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" name="mail" placeholder="Skriv Email her...">
+                </div>
+                <div>
+                    <label for="tlf">Telefon nummer</label>
+                    <input type="text" id="tlf" name="tlf" placeholder="Skriv telefonnummer her...">
+                </div>
+            </div>
+            <label for="emne">Emne</label>
+            <input type="text" id="emne" name="emne" placeholder="Hvorfor vil du gerne kontakte os?">
 
-         <label for="emne">Emne</label>
-     <input type="text" id="emne" name="emne" placeholder="...">
+            <label for="bes">Besked</label>
+            <textarea id="bes" name="bes" rows="5" placeholder="Skriv tekst her..."></textarea>
 
-       <label for="tlf">Telefon nummer</label>
-     <input type="text" id="tlf" name="tlf" placeholder="...">
-   
+            <input type="submit" value="Send">
+        </form>
 
-     <label for="bes">Besked</label>
-     <input type="text" id="bes" name="bes" placeholder="...">
-
-     <input type="button" value="Send">
-     </form>
-
-</main>
+    </main>
 </body>
+
 </html>
