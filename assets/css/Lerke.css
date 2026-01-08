@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 17px;
+}
+
+main {
+    margin: var(--smSpacer);
+
+    img {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+/* Om jiu-jitsu */
+.om_jj_header {
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.om_jj_header img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+p {
+    margin-bottom: 1rem;
+}
+
+.om_jj_img img {
+    max-height: 250px;
+    width: 375px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Accordions */
+.budoregler1,
+.budoregler2,
+.venskabsklubber,
+.instruktører,
+.tosenryu1,
+.tosenryu2 {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(217, 217, 217);
+    margin: 10px;
+    text-align: center;
+}
+
+/* buttons */
+.budoregler1,
+.budoregler2,
+.tosenryu1,
+.tosenryu2,
+.venskabsklubber,
+.instruktører {
+    a {
+        text-decoration: none;
+        color: var(--white);
+        font-weight: bold;
+        border-radius: 4px;
+        background-color: var(--red);
+        padding: 10px 1rem;
+        display: inline-block;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* Jiu-jitsu historie */
+.jj_historie_header {
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jj_historie_header img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tosenryu */
+.tosenryu_header {
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tosenryu_header img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* media queries */
