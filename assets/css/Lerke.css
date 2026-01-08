@@ -64,7 +64,7 @@ p {
     overflow: hidden;
 }
 
-/* cards */
+/* Accordions */
 .budoregler1,
 .budoregler2,
 .venskabsklubber,
@@ -80,8 +80,6 @@ p {
     margin: 10px;
     text-align: center;
 }
-
-
 
 /* buttons */
 .budoregler1,
@@ -117,10 +115,7 @@ p {
     display: block;
 }
 
-
-
 /* Tosenryu */
-
 .tosenryu_header {
     max-height: 200px;
     width: 100%;
