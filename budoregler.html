@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body class="forside">
+<body>
     <!-- Menu Toggle -->
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
     <nav class="navi nav-telefon">
-        <a href="#forside">
+        <a href="./index.html">
             <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
         </a>
         <label for="toggle" class="burger">
@@ -70,7 +70,7 @@
 
     <!-- Navigation til Desktop -->
     <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
+        <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
         <ul class="nav-menu">
             <li class="dropdown-desk">
                 <!-- Tilføj class="active" til den aktive side  -->
@@ -94,7 +94,7 @@
                 </ul>
             </li>
             <li class="dropdown-desk">
-                <a href="#">Om Jiu-Jitsu
+                <a href="#" class="active">Om Jiu-Jitsu
                     <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown-menu three">
@@ -108,8 +108,9 @@
         </ul>
     </nav>
     <header>
-        <img src="./assets/img/klubben.png" alt="Billede af klubben og dens medlemmer">
-        <h1>Hjørring Jiu-Jitsu Klub</h1>
+        <img src="./assets/img/lokale.jpg" alt="Billede af klubben og dens medlemmer" class="budo-img">
+        <h1>Budoregler</h1>
+        <h2>Hvordan og hvorfor?</h2>
         <div class="border"></div>
     </header>
     <main>
@@ -142,71 +143,6 @@
             </a>
             <img src="./assets/img/wamaseminar1.png" alt="Træning til WAMA Seminar" class="bund">
         </section>
-        <div class="accord">
-            <section class="accordion">
-                <details>
-                    <summary><span class="bold">Træningstider</span></summary>
-                    <div class="text">
-                        <div class="acc-dag acc-pad">
-                            <p>Vores nuværende træningstider er som følger:</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p class="bold">Tirsdag</p>
-                            <p>18:00 - 20:00</p>
-                        </div>
-                        <div class="acc-dag acc-pad">
-                            <p class="bold">Torsdag</p>
-                            <p>18:00 - 20:00</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p>Når det nye begynderhold starter, så ændres tiderne. <a href="#" class="acc-a">Læs mere
-                                    om tidsændringerne <i class="fa-solid fa-chevron-right"></i></a></p>
-                        </div>
-                    </div>
-                </details>
-                <details>
-                    <summary><span class="bold">Lokation</span></summary>
-                    <div class="text">
-                        <div class="acc-dag">
-                            <p>Vores lokaler kan findes her:</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p class="bold">Buen 4, 1. Sal, 9800 Hjørring</p>
-                        </div>
-                    </div>
-                </details>
-                <details>
-                    <summary><span class="bold">Medlemskab</span></summary>
-                    <div class="text">
-                        <div class="acc-dag">
-                            <p>De første 4 træningsgange er gratis.</p>
-                        </div>
-                        <div class="acc-dag acc-pad">
-                            <p>Derefter koster det <span class="bold">800kr</span> for at gennemføre et begynderkursus
-                                der varer 3 måneder.</p>
-                        </div>
-                        <div class="acc-dag acc-pad">
-                            <p>Efter man har bestået begynderkurset, koster det <span class="bold">800kr</span> for 6
-                                måneder.</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p>For at tilmelde sig, skal man bare møde op i klubben.</p>
-                        </div>
-                    </div>
-                </details>
-                <details>
-                    <summary><span class="bold">Klubbens love</span></summary>
-                    <div class="text">
-                        <div class="acc-dag">
-                            <p>Se klubbens love og vedtægter her:</p>
-                        </div>
-                        <div class="acc-dag">
-                            <a href="./assets/HJJK-Klubbens-Love.pdf" target="_blank"><i
-                                    class="fa-regular fa-file-pdf"></i> Klubbens love</a>
-                        </div>
-                    </div>
-                </details>
-            </section>
     </main>
     <!-- Footer -->
     <footer>

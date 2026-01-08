@@ -1,13 +1,17 @@
-/* Typografi */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
+
+}
+
+p {
+    font-size: 16px;
 }
 
 /* Variables */
@@ -26,21 +30,17 @@ img {
     display: block;
 }
 
-input {
-    display: none;
-}
-
 /* Navigation til Telefon */
-.navi {
+.nav-telefon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--smSpacer);
+    padding: var(--smSpacer);
     background: var(--eerieBlack);
     height: 100px;
 }
 
-.navi img {
+.nav-telefon img {
     max-height: 75px;
 }
 
@@ -80,7 +80,12 @@ input {
     opacity: 1;
 }
 
-/* Burger Menu */
+/* Checkbox */
+input {
+    display: none;
+}
+
+/* Bruger Menu */
 .burger-menu {
     position: fixed;
     top: 100px;
@@ -88,6 +93,7 @@ input {
     right: -100%;
     width: 100%;
     background-color: var(--eerieBlack);
+    /* padding: var(--smSpacer); */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -173,32 +179,171 @@ input {
     transform: rotate(45deg);
 }
 
-/* Footer til Telefon */
-footer {
-    background: var(--eerieBlack);
+/* Header image */
 
+.wamaheader {
+    max-width: 100%;
+    max-height: 500px;
+    margin: auto;
 }
 
-.foot {
+/* Main */
+
+h1 {
+    text-align: center;
+    padding: var(--smSpacer);
+}
+
+.klubtekst {
+    padding: var(--smSpacer);
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        padding-top: var(--smSpacer);
+    }
+}
+
+.gradueringtekst {
+    padding: 0px 25px 25px 25px;
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+
+    img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        object-position: 0 100%;
+        padding-top: var(--smSpacer);
+        padding-bottom: var(--smSpacer);
+    }
+
+    .sommerlejr2 {
+        object-position: center;
+        padding-top: var(--smSpacer);
+        padding-bottom: var(--smSpacer);
+    }
+}
+
+.toptext {
+    padding-top: 0px;
+}
+
+
+/* Klub kort */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clubcard1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--smSpacer);
+    height: 130px;
+    max-width: 80%;
+    background-color: rgb(224, 224, 224);
+    padding: var(--smSpacer);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--blackOlive);
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+
+    h2 {
+        padding: 25px 0px 25px 25px;
+    }
+}
+
+.clubcard3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--smSpacer);
+    height: 130px;
+    max-width: 80%;
+    background-color: rgb(224, 224, 224);
+    padding: var(--smSpacer);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--blackOlive);
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+    }
+
+    h2 {
+        padding: 25px 0px 25px 25px;
+    }
+}
+
+.clubcard4 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--smSpacer);
+    height: 130px;
+    max-width: 80%;
+    background-color: rgb(224, 224, 224);
+    padding: var(--smSpacer);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--blackOlive);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+
+    h2 {
+        padding: 25px 0px 25px 25px;
+    }
+}
+
+/* Skulle tekst være sort? */
+
+
+
+/* Footer til Telefon */
+.footer-telefon {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: var(--smSpacer);
+    background: var(--eerieBlack);
     color: var(--white);
 }
 
-.foot a {
+.footer-telefon a {
     text-decoration: none;
     color: var(--white);
 }
 
-.foot img {
+.footer-telefon img {
     max-height: 100px;
 }
 
-.foot h3 {
+.footer-telefon h3 {
     font-size: 1rem;
     font-weight: 400;
     text-decoration: underline;
@@ -215,7 +360,17 @@ footer {
 .dag {
     display: flex;
     justify-content: space-between;
-    gap: var(--smSpacer);
+    gap: var(--smSpacer)
+}
+
+.icon-a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-a i {
+    color: var(--red);
 }
 
 .some {
@@ -230,146 +385,10 @@ footer {
     font-size: 3rem;
 }
 
-/* Copyright i Footer */
+/* Copyright i Footer til Telefon */
 .copyright {
     background: var(--red);
     text-align: center;
+    padding: 10px;
     color: var(--white);
-}
-
-/* Fjern Nav & Copyright til Desktop */
-.copyright-desk {
-    display: none;
-}
-
-
-.nav-desktop {
-    display: none;
-}
-
-/* Utility */
-.active {
-    border-bottom: 2px solid var(--red);
-}
-
-@media screen and (min-width:768px) {
-    .copyright-desk {
-        display: block;
-    }
-
-    .copyright-telefon {
-        display: none;
-    }
-
-    /* Footer til Desktop */
-    .foot {
-        display: grid;
-        grid-template-areas:
-            "info img some"
-            "info img some";
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .foot a {
-        grid-area: img;
-    }
-
-    .foot img {
-        max-height: 125px;
-    }
-
-    .foot h3 {
-        text-align: left;
-    }
-
-    .info {
-        grid-area: info;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .tider {
-        max-width: 220px;
-    }
-
-    .some {
-        grid-area: some;
-        flex-direction: column;
-        width: 220px;
-        align-items: flex-start;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    /* Navigation til Desktop*/
-    .navi {
-        display: flex;
-        height: 125px;
-    }
-
-    .navi img {
-        max-height: 90px;
-    }
-
-    .nav-menu {
-        list-style: none;
-        display: flex;
-        gap: 10px;
-    }
-
-    .nav-menu>li {
-        position: relative;
-    }
-
-    .nav-menu>li>a {
-        color: var(--white);
-        text-decoration: none;
-        font-weight: 600;
-        padding: 10px;
-        font-size: 1.125rem;
-    }
-
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        min-width: 235px;
-        background-color: var(--eerieBlack);
-        list-style: none;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(10px);
-        transition: opacity 0.2s ease, transform 0.2s ease;
-    }
-
-    .dropdown-menu li a {
-        display: block;
-        padding: 10px;
-        color: var(--white);
-        text-decoration: none;
-        font-weight: 400;
-    }
-
-    .dropdown-menu li a:hover {
-        background: var(--red);
-    }
-
-    .dropdown-desk:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-    .dropdown-desk:hover>a,
-    .nav-menu>li>a:hover {
-        color: var(--red);
-    }
-
-    .nav-telefon {
-        display: none;
-    }
 }
