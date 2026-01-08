@@ -18,7 +18,7 @@ h1 {
     font-size: 1.875rem;
     text-align: center;
     color: var(--blackOlive);
-    padding: 10px 10px 0;
+    padding: 10px 10px;
 }
 
 h2 {
@@ -27,14 +27,6 @@ h2 {
     font-weight: 400;
     color: var(--blackOlive);
     padding: 0;
-}
-
-
-.border {
-    height: 3px;
-    width: 67%;
-    background-color: var(--red);
-    margin: 10px auto 10px;
 }
 
 img {
@@ -185,6 +177,12 @@ details[open] summary::after {
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
     }
+
+    .om-klubben div,
+    .om-jiu-jitsu div {
+        max-width: 700px;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -198,8 +196,58 @@ details[open] summary::after {
         margin: 0 auto;
     }
 
-    img.side,
-    img.bund {
-        height: 710px;
+    .om-klubben,
+    .om-jiu-jitsu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+
+    .om-klubben {
+        margin-bottom: var(--mdSpacer);
+    }
+
+    .om-jiu-jitsu {
+        margin-bottom: var(--smSpacer);
+    }
+
+    .om-klubben div,
+    .om-jiu-jitsu div {
+        display: flex;
+        flex-direction: column;
+        gap: var(--smSpacer);
+    }
+
+    .om-klubben div {
+        padding-left: 10px;
+    }
+
+    .om-jiu-jitsu div {
+        grid-column: 2;
+        padding-right: 10px;
+    }
+
+    .om-jiu-jitsu img.side,
+    .om-jiu-jitsu img.bund {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0 0 0 10px;
+        height: 195px;
+        object-position: 0 50%;
+    }
+
+    .om-klubben div p,
+    .om-klubben div a,
+    .om-klubben div p:last-of-type,
+    .om-jiu-jitsu div p,
+    .om-jiu-jitsu div a,
+    .om-jiu-jitsu div p:last-of-type {
+        padding: 0;
+    }
+
+    .om-klubben img.side,
+    .om-klubben img.bund {
+        padding: 0 10px 0 0;
     }
 }
