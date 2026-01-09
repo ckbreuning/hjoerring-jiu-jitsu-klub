@@ -29,14 +29,6 @@ h2 {
     padding: 0;
 }
 
-
-.border {
-    height: 3px;
-    width: 67%;
-    background-color: var(--red);
-    margin: 10px auto 10px;
-}
-
 img {
     width: 100%;
     object-fit: cover;
@@ -60,6 +52,9 @@ main p {
     padding: 0 10px 5px;
 }
 
+.om-klubben {
+    margin-top: var(--mdSpacer);
+}
 
 main a {
     display: inline-block;
@@ -72,24 +67,25 @@ main a {
     padding: 10px;
 }
 
-img.side {
+.img-wrap {
     padding: 5px 10px var(--mdSpacer);
+}
+
+.img-wrap:last-of-type {
+    padding-bottom: var(--smSpacer);
+}
+
+img.side {
     height: 310px;
     object-position: 0 56%;
 }
 
 img.bund {
-    padding: 5px 10px var(--smSpacer);
     height: 310px;
     object-position: 0 56%;
 }
 
 /* Accordion */
-.accord {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .accordion {
     display: flex;
@@ -169,6 +165,66 @@ details[open] summary::after {
     padding: 0;
 }
 
+.kontekst h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.kontekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+    padding: var(--smSpacer) 10px;
+}
+
+.news,
+.arrangement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kort {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid var(--blackOlive);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.kort p {
+    width: 265px;
+    padding: 0;
+
+}
+
+.kort h3 {
+    text-align: center;
+    padding-top: var(--smSpacer);
+    font-weight: normal;
+    font-size: 1.75rem;
+    color: var(--blackOlive);
+}
+
+.kort button {
+    width: 220px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--red);
+    margin: auto auto var(--smSpacer);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -178,16 +234,55 @@ details[open] summary::after {
     img.bund {
         height: 510px;
         object-position: 0 63%;
+        max-width: 700px;
+        padding: 0 10px;
+        margin: auto;
     }
 
     .accordion {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    summary {
+        width: 335px;
+    }
+
+    .om-klubben .text-wrap,
+    .om-jiu-jitsu .text-wrap {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .kontekst {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+        gap: 10px;
+        margin: auto;
+    }
+
+    .news h2,
+    .arrangement h2 {
+        padding-left: 0;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .kontekst {
+        max-width: 1440px;
+    }
+
+    .accordion {
+        max-width: 100%;
+    }
+
+    summary {
+        width: auto;
+    }
 
     nav a,
     nav ul,
@@ -198,8 +293,73 @@ details[open] summary::after {
         margin: 0 auto;
     }
 
+    .om-klubben,
+    .om-jiu-jitsu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .om-klubben {
+        margin-bottom: var(--mdSpacer);
+    }
+
+    .om-jiu-jitsu {
+        margin-bottom: var(--smSpacer);
+    }
+
+    .om-klubben .text-wrap,
+    .om-jiu-jitsu .text-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: var(--smSpacer);
+    }
+
+    .om-klubben .text-wrap {
+        padding-left: 10px;
+    }
+
+    .om-jiu-jitsu .text-wrap {
+        grid-column: 2;
+        padding-right: 10px;
+    }
+
+    .om-jiu-jitsu .img-wrap {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0 0 0 10px;
+        flex: 1;
+    }
+
+    .om-jiu-jitsu .img-wrap img {
+        object-position: 0 45%;
+    }
+
+    .om-klubben .img-wrap {
+        margin: 0 10px 0 0;
+    }
+
+    .om-klubben .text-wrap p,
+    .om-klubben .text-wrap a,
+    .om-klubben .text-wrap p:last-of-type,
+    .om-jiu-jitsu .text-wrap p,
+    .om-jiu-jitsu .text-wrap a,
+    .om-jiu-jitsu .text-wrap p:last-of-type {
+        padding: 0;
+    }
+
+    .img-wrap {
+        position: relative;
+        padding: 0;
+    }
+
+    .img-wrap img {
+        position: absolute;
+        height: 100%;
+    }
+
     img.side,
     img.bund {
-        height: 710px;
+        padding: 0;
     }
 }
