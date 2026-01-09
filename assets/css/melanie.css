@@ -183,7 +183,6 @@ input[type="submit"] {
 }
 
 .form-row>div {
-    margin: 10px 0 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -198,7 +197,7 @@ input[type="submit"] {
         flex-direction: column;
 
     }
-    
+
 
     .usection1 img {
         margin: 0;

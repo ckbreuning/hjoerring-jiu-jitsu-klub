@@ -18,7 +18,7 @@ h1 {
     font-size: 1.875rem;
     text-align: center;
     color: var(--blackOlive);
-    padding: 10px 10px;
+    padding: 10px 10px 0;
 }
 
 h2 {
@@ -52,6 +52,9 @@ main p {
     padding: 0 10px 5px;
 }
 
+.om-klubben {
+    margin-top: var(--mdSpacer);
+}
 
 main a {
     display: inline-block;
