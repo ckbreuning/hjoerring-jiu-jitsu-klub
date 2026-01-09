@@ -118,6 +118,7 @@ main {
 .in img {
     border-radius: 50%;
     width: 100%;
+    border: 1px solid var(--eerieBlack) ;
 }
 
 .in figcaption {
@@ -203,7 +204,7 @@ input[type="submit"] {
     .usection1 img {
         margin: 0;
         align-self: center;
-        max-width: 50%;
+        max-width: 80%;
     }
 
     .usection2 {
@@ -227,9 +228,10 @@ input[type="submit"] {
         flex-direction: column;
     }
 
+main{
+    padding: 10px;
+}
 }
 
 
 
-
-@media (max-width:375px) {}
