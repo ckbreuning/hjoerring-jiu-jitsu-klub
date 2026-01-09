@@ -8,6 +8,13 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/backgroundhjjklighter15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Variables */
@@ -28,6 +35,13 @@ img {
 
 input {
     display: none;
+}
+
+.border {
+    height: 3px;
+    width: 67%;
+    background-color: var(--red);
+    margin: 10px auto 10px;
 }
 
 /* Navigation til Telefon */
@@ -85,13 +99,13 @@ input {
     position: fixed;
     top: 100px;
     height: calc(100vh - 100px);
-    right: -100%;
+    transform: translateX(100%);
     width: 100%;
     background-color: var(--eerieBlack);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    transition: right 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .burger-menu a {
@@ -102,7 +116,7 @@ input {
 }
 
 #toggle:checked~.burger-menu {
-    right: 0;
+    transform: translateX(0);
 }
 
 .side-menu {
@@ -130,6 +144,7 @@ input {
     padding: 10px;
     font-size: 1.5rem;
     user-select: none;
+    padding: 0 10px;
 }
 
 /* Drop-down Menu i Burger Menu  */
@@ -156,10 +171,6 @@ input {
 }
 
 /* Drop-down Menu Animation */
-.toggle-knap {
-    padding: 0;
-}
-
 .toggle-knap::after {
     content: "+";
     color: var(--white);
@@ -222,7 +233,7 @@ footer {
     list-style: none;
     margin: 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -265,7 +276,6 @@ footer {
     .foot {
         display: grid;
         grid-template-areas:
-            "info img some"
             "info img some";
         align-items: center;
         justify-content: space-evenly;
@@ -296,9 +306,8 @@ footer {
 
     .some {
         grid-area: some;
-        flex-direction: column;
         width: 220px;
-        align-items: flex-start;
+        justify-content: center;
     }
 
 }
