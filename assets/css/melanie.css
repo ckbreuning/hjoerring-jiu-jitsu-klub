@@ -33,6 +33,7 @@ span {
 main {
     padding: 0px var(--xlSpacer);
     justify-content: center;
+    overflow-x: hidden;
 
 }
 
@@ -112,7 +113,6 @@ main {
 .in {
     display: flex;
     margin-top: var(--mdSpacer);
-
 }
 
 .in img {
@@ -192,6 +192,10 @@ input[type="submit"] {
 
 @media (max-width:768px) {
 
+    h1{
+        font-size: 30px;
+    }
+
     /* Udstyr */
 
     .usection1 {
@@ -212,8 +216,10 @@ input[type="submit"] {
         flex-direction: column;
         align-items: center;
         gap: var(--smSpacer);
+    }
 
-
+    .usection2 h2{
+        font-size: 25px;
     }
 
     .usection2 article {
@@ -226,12 +232,22 @@ input[type="submit"] {
     .in {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
+
 
 main{
     padding: 10px;
+    overflow-x: hidden;
+}
+
+.in img{
+    max-width: 50%;
+    justify-self: center;
 }
 }
+
 
 
 
