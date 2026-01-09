@@ -248,5 +248,24 @@ main{
 }
 
 
+@media (max-width:375px){
 
+    .form-row{
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    }
+
+    h1{
+       padding:var(--smSpacer);
+    }
+
+   
+
+    p{
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
 
