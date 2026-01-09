@@ -25,6 +25,14 @@ img {
     display: block;
 }
 
+<<<<<<< Updated upstream
+=======
+.dropdown input,
+.burger-menu input {
+    display: none;
+}
+
+>>>>>>> Stashed changes
 /* Navigation til Telefon */
 .nav-telefon {
     display: flex;

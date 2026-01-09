@@ -41,7 +41,7 @@ main{
 .hero img{
    width: 100%;
    object-fit: cover;
-   height: 50vh;
+   height: 70vh;
 }
 
 
@@ -129,14 +129,50 @@ font-size: 35px;
 
 /* Kontakt */
 
+.kontakt{
+    max-width: 900px;
+    margin-bottom: var(--smSpacer);
+    justify-self: center;
+}
+
+.kontakt p {
+text-align: center;
+margin-bottom: var(--smSpacer);
+margin-top: -5px;
+}
+
+
+
 form{
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    padding: var(--smSpacer);
+    gap: 1rem;
+}
+
+label{
+margin-bottom: -1rem;
 }
 
 #bes, #navn, #mail, #emne, #tlf {
- border: 1px solid black;
+ padding: 5px;
+}
+
+#bes{
+    padding-bottom: var(--mdSpacer);
+}
+
+#btn{
+   background-color:var(--red) ;
+   color:var(--white);
+   font-weight: bold;
+   letter-spacing: 2px;
+   border: none;
+   max-width: 300px;
+   padding: 10px;
+   cursor: pointer;
+  
 }
 
 @media (max-width:768px){
@@ -174,6 +210,17 @@ form{
     .in{
         display: flex;
         flex-direction: column;
+    }
+
+    /* Kontakt */
+
+    .kontakt{
+       
+    }
+
+    #btn{
+        
+        
     }
 
 }
