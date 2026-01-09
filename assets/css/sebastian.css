@@ -196,6 +196,20 @@ h1 {
     padding: var(--smSpacer);
 }
 
+
+.klubteksten {
+    padding: var(--smSpacer);
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        padding-top: var(--smSpacer);
+    }
+}
+
 .klubtekst {
     padding: var(--smSpacer);
 
@@ -209,7 +223,7 @@ h1 {
     }
 }
 
-.gradueringtekst {
+.gradueringteksten {
     padding: 0px 25px 25px 25px;
 
     p {
@@ -269,6 +283,10 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+}
+
+.allcards h3 {
+    font-size: 16px;
 }
 
 .clubcard1 {
@@ -399,6 +417,7 @@ a {
         border-radius: 5px;
         font-size: 0.8rem;
         font-weight: bold;
+        color: white;
     }
 
     p {
@@ -422,6 +441,7 @@ a {
         border-radius: 5px;
         font-size: 0.8rem;
         font-weight: bold;
+        color: white;
     }
 
     p {
@@ -436,12 +456,62 @@ a {
     }
 }
 
+.klubbenshistorieimg {
+    padding-bottom: var(--smSpacer);
+}
+
+
 @media screen and (min-width:768px) {
+
+    .allcards h3 {
+        font-size: 20px;
+    }
 
     .relatedarticles {
         display: flex;
         justify-content: center;
         gap: 15px;
+    }
+
+    /* Grid til venskabsklubber */
+
+    .allcards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .headerimg {
+        height: 450px;
+    }
+
+    .relatedarticles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .klubbengrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: start;
+        padding-bottom: var(--smSpacer);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .klubbenshistorieimg {
+        max-width: 600px;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .klubparagraphs {
+        grid-column: 1;
     }
 
 }
