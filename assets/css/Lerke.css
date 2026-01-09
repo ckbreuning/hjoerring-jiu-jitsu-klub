@@ -16,13 +16,13 @@ body {
 main {
     margin: var(--smSpacer);
 
-    img {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-
     span {
         font-weight: bold;
+
+        img {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -73,7 +73,7 @@ p {
 .tosenryu2 {
     border: 1px solid black;
     border-radius: 4px;
-    padding: 1rem;
+    padding: .5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: rgb(217, 217, 217);
@@ -131,3 +131,70 @@ p {
 }
 
 /* media queries */
+
+@media (min-width:750px) {
+
+    .tosenryu_indhold {
+
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        gap: 10px;
+
+    }
+
+    .tosenryu_tekst1 {
+        grid-column: 1;
+    }
+
+    .tosenryu_logo {
+        grid-column: 2;
+    }
+
+    .t_accordions {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        gap: 10px;
+    }
+
+    .venskabsklubber {
+        grid-column: 1;
+    }
+
+    .instruktører {
+        grid-column: 2;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .tosenryu_indhold {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        gap: 1rem;
+
+    }
+
+    .tosenryu_tekst1 {
+        grid-column: 1;
+    }
+
+    .tosenryu_logo {
+        grid-column: 2;
+    }
+
+    .t_accordions {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        gap: 1rem;
+    }
+
+    .venskabsklubber {
+        grid-column: 1;
+    }
+
+    .instruktører {
+        grid-column: 2;
+    }
+}
+
+/* mobile first= min width */
