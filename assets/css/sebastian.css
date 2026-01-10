@@ -243,8 +243,8 @@ h1 {
 
     .sommerlejr2 {
         object-position: center;
-        padding-top: var(--smSpacer);
-        padding-bottom: var(--smSpacer);
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -253,7 +253,7 @@ h1 {
 }
 
 .medlemskabtekst {
-    padding: 0px 15px 15px 15px;
+    padding: 0px 15px 15px 25px;
 
     p {
         padding: 15px 0px 0px 0px;
@@ -276,8 +276,17 @@ h1 {
     display: block;
     object-position: 0 100%;
     padding-top: var(--smSpacer);
+}
+
+.medlemimg2 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    padding-top: 0px;
     padding-bottom: var(--smSpacer);
 }
+
 
 /* Klub kort til venskabsklubber */
 a {
@@ -514,6 +523,90 @@ a {
         grid-column: 1;
     }
 
+    .medlemskabtekst {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        padding-bottom: var(--smSpacer);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .medlemimages {
+        max-width: 600px;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .medlemskabtekstsection {
+        grid-column: 1;
+    }
+
+    .gradueringteksten {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        padding-bottom: var(--smSpacer);
+        max-width: 1200px;
+        margin: auto;
+
+        .belts {
+            max-height: 723x;
+        }
+
+    }
+
+
+    .belts img {
+        height: 100%;
+        padding: 0%;
+        object-position: -100px;
+
+    }
+
+    .gradtextsection {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .gradtextsection2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .belts {
+        grid-column: 2;
+        grid-row: 1;
+
+    }
+
+    .sommerlejr2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+@media screen and (min-width:840px) {
+
+    .belts img {
+        height: 100%;
+        padding: 0%;
+        object-position: -50px;
+
+    }
+}
+
+@media screen and (min-width:965px) {
+    .belts {
+
+        img {
+            max-height: 500px;
+            object-position: bottom;
+        }
+    }
 }
 
 /* Footer til Telefon */
