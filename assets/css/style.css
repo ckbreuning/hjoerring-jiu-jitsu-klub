@@ -12,9 +12,13 @@
 }
 
 body {
-    background-image: url(../img/backgroundhjjklighter15.png);
+    background-image: url(../img/hjorring-jiu-jitsu-klub-main-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#jjh {
+    background-image: url(../img/hjorring-jiu-jitsu-klub-secondary-background.svg);
 }
 
 /* Variables */
@@ -112,7 +116,7 @@ input {
     color: var(--white);
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #toggle:checked~.burger-menu {
@@ -153,7 +157,7 @@ input {
     background: var(--red);
     max-height: 0;
     overflow: hidden;
-    font-weight: 400;
+    font-weight: normal;
     transition: max-height 0.3s ease;
 }
 
@@ -187,7 +191,6 @@ input {
 /* Footer til Telefon */
 footer {
     background: var(--eerieBlack);
-
 }
 
 .foot {
@@ -211,9 +214,10 @@ footer {
 
 .foot h3 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: normal;
     text-decoration: underline;
     text-align: center;
+    color: var(--white);
 }
 
 
@@ -337,7 +341,7 @@ footer {
     .nav-menu>li>a {
         color: var(--white);
         text-decoration: none;
-        font-weight: 600;
+        font-weight: bold;
         padding: 10px;
         font-size: 1.125rem;
     }
@@ -360,7 +364,7 @@ footer {
         padding: 10px;
         color: var(--white);
         text-decoration: none;
-        font-weight: 400;
+        font-weight: normal;
     }
 
     .dropdown-menu li a:hover {
