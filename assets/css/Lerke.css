@@ -57,6 +57,10 @@ p {
     margin-bottom: 1rem;
 }
 
+.copyright p {
+    margin-bottom: 0;
+}
+
 .om_jj_img img {
     max-height: 250px;
     width: 375px;

@@ -24,9 +24,20 @@ h1 {
 h2 {
     font-size: 1.25rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: normal;
     color: var(--blackOlive);
-    padding: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--blackOlive);
+}
+
+h4 {
+    font-weight: bold;
+    color: var(--blackOlive);
+    font-style: italic;
 }
 
 img {
@@ -36,10 +47,6 @@ img {
 
 header img {
     max-height: 510px;
-}
-
-.budo-img {
-    object-position: 0 0;
 }
 
 main p {
@@ -52,7 +59,14 @@ main p {
     padding: 0 10px 5px;
 }
 
-.om-klubben {
+.budo-intro p:last-of-type,
+.budo-regler p:last-of-type {
+    padding: 0 10px 10px;
+}
+
+.om-klubben,
+.kursus1,
+.budo-intro {
     margin-top: var(--mdSpacer);
 }
 
@@ -60,7 +74,7 @@ main a {
     display: inline-block;
     text-decoration: none;
     color: var(--red);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .main-a {
@@ -68,19 +82,29 @@ main a {
 }
 
 .img-wrap {
-    padding: 5px 10px var(--mdSpacer);
+    margin: 5px 10px var(--mdSpacer);
+    position: relative;
 }
 
-.img-wrap:last-of-type {
-    padding-bottom: var(--smSpacer);
+.img-wrap::after {
+    content: "© Hjørring Jiu-Jitsu Klub";
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    font-size: 10px;
+    color: var(--white);
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
 }
 
-img.side {
-    height: 310px;
-    object-position: 0 56%;
+.img-wrap.inverted::after {
+    color: var(--eerieBlack);
 }
 
-img.bund {
+img.side,
+img.bund,
+img.budo {
     height: 310px;
     object-position: 0 56%;
 }
@@ -225,17 +249,42 @@ details[open] summary::after {
 
 }
 
+.text-wrap h2 {
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.kursus1 .text-wrap h3 {
+    text-align: center;
+    padding: 0;
+}
+
+.kursus1 .text-wrap {
+    margin: var(--smSpacer);
+}
+
+.budo-regler h3 {
+    padding: 0 10px 10px;
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3rem;
     }
 
+    .img-wrap {
+        max-width: 700px;
+        margin: auto;
+        padding: 0 10px;
+    }
+
     img.side,
-    img.bund {
+    img.bund,
+    img.budo {
         height: 510px;
         object-position: 0 63%;
-        max-width: 700px;
-        padding: 0 10px;
         margin: auto;
     }
 
@@ -252,9 +301,16 @@ details[open] summary::after {
     }
 
     .om-klubben .text-wrap,
-    .om-jiu-jitsu .text-wrap {
+    .om-jiu-jitsu .text-wrap,
+    .budo-intro .text-wrap,
+    .budo-regler .text-wrap {
         max-width: 700px;
         margin: auto;
+    }
+
+    .kursus1 .text-wrap {
+        max-width: 700px;
+        margin: var(--smSpacer) auto;
     }
 
     .kontekst {
@@ -268,6 +324,11 @@ details[open] summary::after {
     .news h2,
     .arrangement h2 {
         padding-left: 0;
+    }
+
+    .img-wrap::after,
+    .img-wrap.inverted::after {
+        left: 15px;
     }
 }
 
@@ -294,32 +355,42 @@ details[open] summary::after {
     }
 
     .om-klubben,
-    .om-jiu-jitsu {
+    .om-jiu-jitsu,
+    .budo-intro,
+    .budo-regler {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 
-    .om-klubben {
+    .om-klubben,
+    .budo-intro {
         margin-bottom: var(--mdSpacer);
     }
 
-    .om-jiu-jitsu {
+    .om-jiu-jitsu,
+    .budo-regler {
         margin-bottom: var(--smSpacer);
     }
 
     .om-klubben .text-wrap,
-    .om-jiu-jitsu .text-wrap {
+    .om-jiu-jitsu .text-wrap,
+    .budo-intro .text-wrap,
+    .budo-regler .text-wrap {
         display: flex;
         flex-direction: column;
         gap: var(--smSpacer);
     }
 
-    .om-klubben .text-wrap {
+    .om-klubben .text-wrap,
+    .budo-intro .text-wrap,
+    .budo-regler .respekt {
         padding-left: 10px;
     }
 
-    .om-jiu-jitsu .text-wrap {
+    .om-jiu-jitsu .text-wrap,
+    .budo-regler .dojo,
+    .budo-regler .usikker {
         grid-column: 2;
         padding-right: 10px;
     }
@@ -331,11 +402,19 @@ details[open] summary::after {
         flex: 1;
     }
 
+    .budo-regler .img-wrap {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0 0 0 10px;
+        flex: 1;
+    }
+
     .om-jiu-jitsu .img-wrap img {
         object-position: 0 45%;
     }
 
-    .om-klubben .img-wrap {
+    .om-klubben .img-wrap,
+    .budo-intro .img-wrap {
         margin: 0 10px 0 0;
     }
 
@@ -344,8 +423,17 @@ details[open] summary::after {
     .om-klubben .text-wrap p:last-of-type,
     .om-jiu-jitsu .text-wrap p,
     .om-jiu-jitsu .text-wrap a,
-    .om-jiu-jitsu .text-wrap p:last-of-type {
+    .om-jiu-jitsu .text-wrap p:last-of-type,
+    .budo-intro .text-wrap p,
+    .budo-intro .text-wrap p:last-of-type,
+    .budo-regler .text-wrap p,
+    .budo-regler .text-wrap p:last-of-type,
+    .budo-regler .text-wrap h3 {
         padding: 0;
+    }
+
+    .text-wrap .respekt {
+        padding: 0 0 0 10px;
     }
 
     .img-wrap {
@@ -359,7 +447,13 @@ details[open] summary::after {
     }
 
     img.side,
-    img.bund {
+    img.bund,
+    img.budo {
         padding: 0;
+    }
+
+    .img-wrap::after,
+    .img-wrap.inverted::after {
+        left: 5px;
     }
 }
