@@ -417,6 +417,8 @@ a {
     width: 100%;
     max-width: 500px;
     margin: auto;
+    padding-left: var(--smSpacer);
+    padding-right: var(--smSpacer);
 }
 
 .articles {
