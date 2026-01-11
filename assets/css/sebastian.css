@@ -193,9 +193,15 @@ input {
 
 h1 {
     text-align: center;
-    padding: var(--smSpacer);
+    padding: 10px 10px 0;
 }
 
+.border {
+    height: 3px;
+    width: 67%;
+    background-color: var(--red);
+    margin: 10px auto 10px;
+}
 
 .klubteksten {
     padding: var(--smSpacer);
@@ -224,7 +230,7 @@ h1 {
 }
 
 .gradueringteksten {
-    padding: 0px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
 
     p {
         padding: 15px 0px 0px 0px;
@@ -292,6 +298,10 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+}
+
+.allcards {
+    padding-top: var(--smSpacer);
 }
 
 .allcards h3 {
