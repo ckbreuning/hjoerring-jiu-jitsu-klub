@@ -45,13 +45,14 @@ img {
     object-fit: cover;
 }
 
-header img {
-    max-height: 510px;
-}
-
 main p {
     padding: 0 10px var(--smSpacer);
     color: var(--blackOlive)
+}
+
+main {
+    padding-top: var(--mdSpacer);
+    padding-bottom: var(--smSpacer);
 }
 
 .om-klubben p:last-of-type,
@@ -59,15 +60,17 @@ main p {
     padding: 0 10px 5px;
 }
 
+.hold p:last-of-type {
+    padding: 0 10px var(--smSpacer);
+}
+
 .budo-intro p:last-of-type,
 .budo-regler p:last-of-type {
     padding: 0 10px 10px;
 }
 
-.om-klubben,
-.kursus1,
-.budo-intro {
-    margin-top: var(--mdSpacer);
+.hold .img-wrap {
+    margin-top: 0px;
 }
 
 main a {
@@ -115,7 +118,7 @@ img.budo {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
+    padding: 0 10px var(--smSpacer);
 }
 
 .accordion details {
@@ -177,16 +180,15 @@ details[open] summary::after {
 
 .acc-a {
     color: var(--red);
-    padding: 10px 0 0;
+    padding-top: 10px;
 }
 
-.acc-dag a i {
+.arrow {
+    color: var(--red);
+}
+
+.fa-file-pdf {
     color: var(--blackOlive);
-}
-
-.bold {
-    font-weight: bold;
-    padding: 0;
 }
 
 .kontekst h2 {
@@ -199,7 +201,7 @@ details[open] summary::after {
     display: flex;
     flex-direction: column;
     gap: var(--smSpacer);
-    padding: var(--smSpacer) 10px;
+    padding: 0 10px;
 }
 
 .news,
@@ -219,6 +221,7 @@ details[open] summary::after {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding-top: var(--smSpacer);
 }
 
 .kort p {
@@ -229,7 +232,6 @@ details[open] summary::after {
 
 .kort h3 {
     text-align: center;
-    padding-top: var(--smSpacer);
     font-weight: normal;
     font-size: 1.75rem;
     color: var(--blackOlive);
@@ -269,6 +271,101 @@ details[open] summary::after {
     padding: 0 10px 10px;
 }
 
+.traener {
+    padding: 0 10px var(--smSpacer);
+}
+
+.traener p {
+    padding: 0;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.slide img {
+    height: 100%;
+}
+
+.pile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    background: rgba(31, 27, 28, 0.5);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pile.prev {
+    left: 2%;
+}
+
+.pile.next {
+    right: 2%;
+}
+
+.dots {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dots a {
+    width: 14px;
+    height: 14px;
+    background: var(--white);
+    border-radius: 50%;
+    position: relative;
+}
+
+.dots a::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--red);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.slideshow:has(#slide1:target) .dots a[href="#slide1"]::after,
+.slideshow:has(#slide2:target) .dots a[href="#slide2"]::after,
+.slideshow:has(#slide3:target) .dots a[href="#slide3"]::after {
+    opacity: 1;
+}
+
+.slideshow:not(:has(:target)) .dots a[href="#slide1"]::after {
+    opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -280,6 +377,15 @@ details[open] summary::after {
         padding: 0 10px;
     }
 
+    .om-klubben,
+    .om-jiu-jitsu,
+    .budo-intro,
+    .hold,
+    .budo-regler,
+    .traening {
+        margin-bottom: var(--mdSpacer);
+    }
+
     img.side,
     img.bund,
     img.budo {
@@ -287,6 +393,7 @@ details[open] summary::after {
         object-position: 0 63%;
         margin: auto;
     }
+
 
     .accordion {
         display: grid;
@@ -303,7 +410,9 @@ details[open] summary::after {
     .om-klubben .text-wrap,
     .om-jiu-jitsu .text-wrap,
     .budo-intro .text-wrap,
-    .budo-regler .text-wrap {
+    .budo-regler .text-wrap,
+    .hold .text-wrap,
+    .traening .text-wrap {
         max-width: 700px;
         margin: auto;
     }
@@ -315,7 +424,7 @@ details[open] summary::after {
 
     .kontekst {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         max-width: 700px;
         gap: 10px;
         margin: auto;
@@ -334,7 +443,7 @@ details[open] summary::after {
 
 @media screen and (min-width: 1024px) {
     .kontekst {
-        max-width: 1440px;
+        max-width: 1232px;
     }
 
     .accordion {
@@ -350,33 +459,47 @@ details[open] summary::after {
     .foot,
     main,
     header {
-        max-width: 1440px;
+        max-width: 1232px;
         margin: 0 auto;
+    }
+
+    .img-wrap {
+        max-width: 1232px;
+        margin: 10px;
     }
 
     .om-klubben,
     .om-jiu-jitsu,
     .budo-intro,
-    .budo-regler {
+    .budo-regler,
+    .hold {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 
-    .om-klubben,
-    .budo-intro {
-        margin-bottom: var(--mdSpacer);
+    .traening {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--smSpacer);
     }
 
-    .om-jiu-jitsu,
-    .budo-regler {
-        margin-bottom: var(--smSpacer);
+    .traening {
+        align-items: start;
+    }
+
+    .om-klubben,
+    .budo-intro,
+    .hold {
+        margin-bottom: var(--mdSpacer);
     }
 
     .om-klubben .text-wrap,
     .om-jiu-jitsu .text-wrap,
     .budo-intro .text-wrap,
-    .budo-regler .text-wrap {
+    .budo-regler .text-wrap,
+    .hold .text-wrap,
+    .traening .text-wrap {
         display: flex;
         flex-direction: column;
         gap: var(--smSpacer);
@@ -384,15 +507,24 @@ details[open] summary::after {
 
     .om-klubben .text-wrap,
     .budo-intro .text-wrap,
-    .budo-regler .respekt {
+    .budo-regler .respekt,
+    .hold .text-wrap,
+    .traening .first {
         padding-left: 10px;
     }
 
     .om-jiu-jitsu .text-wrap,
     .budo-regler .dojo,
-    .budo-regler .usikker {
+    .budo-regler .usikker,
+    .traening .second {
         grid-column: 2;
         padding-right: 10px;
+    }
+
+    .hold {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     .om-jiu-jitsu .img-wrap {
@@ -414,7 +546,8 @@ details[open] summary::after {
     }
 
     .om-klubben .img-wrap,
-    .budo-intro .img-wrap {
+    .budo-intro .img-wrap,
+    .hold .img-wrap {
         margin: 0 10px 0 0;
     }
 
@@ -428,12 +561,12 @@ details[open] summary::after {
     .budo-intro .text-wrap p:last-of-type,
     .budo-regler .text-wrap p,
     .budo-regler .text-wrap p:last-of-type,
-    .budo-regler .text-wrap h3 {
+    .budo-regler .text-wrap h3,
+    .hold .text-wrap p,
+    .traener,
+    .traening .text-wrap p,
+    .traening .text-wrap p:last-of-type {
         padding: 0;
-    }
-
-    .text-wrap .respekt {
-        padding: 0 0 0 10px;
     }
 
     .img-wrap {
@@ -455,5 +588,30 @@ details[open] summary::after {
     .img-wrap::after,
     .img-wrap.inverted::after {
         left: 5px;
+    }
+
+    .slideshow {
+        width: 100%;
+        height: 400px;
+    }
+
+    .traening .img-wrap {
+        margin: 0 10px;
+    }
+
+    .traening .text-wrap {
+        max-width: 1232px;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: var(--smSpacer);
+    }
+
+    .traening .first,
+    .traening .second {
+        display: flex;
+        flex-direction: column;
+        gap: var(--smSpacer);
     }
 }
