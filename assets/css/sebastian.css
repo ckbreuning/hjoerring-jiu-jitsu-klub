@@ -45,8 +45,8 @@ img {
     bottom: auto;
 }
 
-h3 {
-    font-size: 1rem;
+h2 {
+    font-size: 1.25rem;
     font-weight: bold;
     color: var(--blackOlive);
 }
@@ -141,7 +141,7 @@ a {
     margin-bottom: var(--mdSpacer);
 }
 
-.allcards h3 {
+.allcards h2 {
     font-size: 16px;
 }
 
@@ -165,8 +165,8 @@ a {
         border-radius: 50%;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -190,8 +190,8 @@ a {
         border-radius: 50%;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -214,8 +214,8 @@ a {
         max-width: 100px;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -240,8 +240,8 @@ a {
         border-radius: 50%;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -254,7 +254,7 @@ a {
 
 @media screen and (min-width:768px) {
 
-    .allcards h3 {
+    .allcards h2 {
         font-size: 20px;
     }
 
