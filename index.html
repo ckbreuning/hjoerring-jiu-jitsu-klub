@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <title>Hjørring Jiu-Jitsu Klub</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/christian.css">
-    <link rel="stylesheet" href="./assets/css/scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
@@ -16,14 +15,16 @@
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="navi nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="#forside">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -70,43 +71,45 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
         <img src="./assets/img/hjorring-jiu-jitsu-klub-group-photo.webp"
@@ -115,7 +118,7 @@
         <div class="border"></div>
     </header>
     <main>
-        <section class="om-klubben">
+        <div class="om-klubben">
             <div class="text-wrap">
                 <p>Hjørring Jiu-Jitsu Klub blev startet som en Judo og Jiu-Jitsu klub på et nedlagt husmandssted i
                     nærheden
@@ -137,15 +140,15 @@
                     af det praktiske i driften af klubben.</p>
                 <p>Derudover har vi en hovedforening der sørger for alt det praktiske der ligger i at drive klubben.
                 </p>
-                <a href="./omKlubben.html" class="main-a">Læs mere om klubben
+                <a href="./omKlubben.html">Læs mere om klubben
                     <i class="fa-solid fa-chevron-right arrow"></i>
                 </a>
             </div>
             <div class="img-wrap">
                 <img src="./assets/img/paa-strand.jpg" alt="Træning på stranden" class="side">
             </div>
-        </section>
-        <section class="om-jiu-jitsu">
+        </div>
+        <div class="om-jiu-jitsu">
             <div class="text-wrap">
                 <p>Jiu-Jitsu er en sport der giver dig muligheden for at forsvare dig selv i en overfaldssituation. Lige
                     fra
@@ -153,34 +156,34 @@
                 <p>Jiu-Jitsu giver dig også en bedre situationsfornemmelse, der gerne skulle holde dig udenfor
                     konflikter.
                     Det giver også større selvtillid, fysik, smidighed og bedre kontrol over din krop.</p>
-                <a href="./jiu-jitsu_historie.html" class="main-a">Læs mere om Jit-Jitsuens historie
+                <a href="./jiu-jitsu_historie.html">Læs mere om Jit-Jitsuens historie
                     <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </div>
             <div class="img-wrap">
-                <img src="./assets/img/wamaseminar1.png" alt="Træning til WAMA Seminar" class="bund">
+                <img src="./assets/img/wamaseminar1.png" alt="Træning til WAMA Seminar">
             </div>
-        </section>
-        <section class="accordion">
+        </div>
+        <div class="accordion">
             <details>
                 <summary><strong>Træningstider</strong></summary>
                 <div class="text">
-                    <div class="acc-dag acc-pad">
+                    <div class="acc-dag">
                         <p>Vores nuværende træningstider er som følger:</p>
                     </div>
                     <div class="acc-dag">
                         <p><strong>Tirsdag</strong></p>
                         <p>18:00 - 20:00</p>
                     </div>
-                    <div class="acc-dag acc-pad">
+                    <div class="acc-dag">
                         <p><strong>Torsdag</strong></p>
                         <p>18:00 - 20:00</p>
                     </div>
                     <div class="acc-dag">
-                        <p>Når det nye begynderhold starter, så ændres tiderne. <a href="./traening.html"
-                                class="acc-a">Læs mere
-                                om tidsændringerne <i class="fa-solid fa-chevron-right"></i></a></p>
+                        <p>Når det nye begynderhold starter, så ændres tiderne.</p>
                     </div>
+                    <div class="acc-dag"> <a href="./traening.html">Læs mere
+                            om tidsændringerne <i class="fa-solid fa-chevron-right"></i></a></div>
                 </div>
             </details>
             <details>
@@ -200,12 +203,12 @@
                     <div class="acc-dag">
                         <p>De første 4 træningsgange er gratis.</p>
                     </div>
-                    <div class="acc-dag acc-pad">
+                    <div class="acc-dag ">
                         <p>Derefter koster det <strong>800kr</strong> for at gennemføre et
                             begynderkursus
                             der varer 3 måneder.</p>
                     </div>
-                    <div class="acc-dag acc-pad">
+                    <div class="acc-dag ">
                         <p>Efter man har bestået begynderkurset, koster det <strong>800kr</strong> for
                             6
                             måneder.</p>
@@ -227,15 +230,15 @@
                     </div>
                 </div>
             </details>
-        </section>
-        <section class="kontekst">
+        </div>
+        <div class="kontekst">
             <article class="news">
                 <h2>Nyheder</h2>
                 <div class="kort">
                     <h3>Begynderhold</h3>
                     <p>Et nyt begynderhold starter i Februar 2026.</p>
                     <p>Skal du være en af vores nye medlem?</p>
-                    <button>Se nyt begynderhold</button>
+                    <a>Se nyt begynderhold</a>
                 </div>
             </article>
             <article class="arrangement">
@@ -244,10 +247,10 @@
                     <h3>Ingen kommende kurser</h3>
                     <p>Der er i øjeblikket ingen kommende kurser.</p>
                     <p>Hold øje med siden for opdateringer.</p>
-                    <button>Alle arrangementer</button>
+                    <a>Alle arrangementer</a>
                 </div>
             </article>
-        </section>
+        </div>
     </main>
     <!-- Footer -->
     <footer>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,16 @@
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="navi nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -69,52 +71,58 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html" class="active">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- billede er fra colourbox -->
-    <div class="jj_historie_header">
-        <img src="./assets/img/COLOURBOX61190372.jpg" alt="© Hjørring Jiu-Jitsu klub">
-    </div>
-    <h1>Jiu-Jitsu Historie</h1>
+    <header>
+        <div class="jj_historie_header">
+            <img src="./assets/img/COLOURBOX61190372.jpg" alt="© Hjørring Jiu-Jitsu klub">
+        </div>
+        <h1>Jiu-Jitsu Historie</h1>
+        <div class="border"></div>
+    </header>
     <main>
-        <section class="historie">
+        <div class="historie">
             <div class="jj_historie_tekst1">
                 <p>De første kendte oplysninger man har om forsvar uden våben, stammer fra billedfliser i Beni Hassans
                     gravmæle, der ligger ved Nilen. Disse fliser er daterede til omkring 4000 år f.Kr. </p>
@@ -152,7 +160,7 @@
                     bære disse fantastiske våben.</p>
             </div>
 
-            <div class="samurai">
+            <div class="img-wrap samuari">
                 <img src="./assets/img/samurai.jpg" alt="© Hjørring Jiu-Jitsu klub">
             </div>
 
@@ -164,13 +172,14 @@
 
                 <p>Bugei bestod af over 50 forskellige kampformer, der kaldes jitsu, bl.a.:
                     <br>
-                    <span>Kyu-Jitsu:</span> bueskydningsteknik;
+                    <strong>Kyu-Jitsu:</strong> bueskydningsteknik;
                     <br>
-                    <span>Lai-Jitsu:</span> sværdkampsteknik;
+                    <strong>Lai-Jitsu:</strong> sværdkampsteknik;
                     <br>
-                    <span>Suei-Jitsu:</span> gik ud på at kæmpe i vand iklædt rustning;
+                    <strong>Suei-Jitsu:</strong> gik ud på at kæmpe i vand iklædt rustning;
                     <br>
-                    <span>Jiu-Jitsu:</span> der havde en fastere målsætning og form, at uskadeliggøre en modstander med
+                    <strong>Jiu-Jitsu:</strong> der havde en fastere målsætning og form, at uskadeliggøre en modstander
+                    med
                     mindst mulig
                     styrke og mindst mulig brug af våben.
                 </p>
@@ -181,7 +190,7 @@
                     eftergørenhed".</p>
             </div>
 
-            <div class="jj_grafik">
+            <div class="img-wrap jj_grafik red">
                 <img src="./assets/img/COLOURBOX54269181.jpg" alt="© Hjørring Jiu-Jitsu klub">
             </div>
 
@@ -216,7 +225,7 @@
                     modstand på rette måde og tidspunkt.</p>
             </div>
 
-            <div class="jj_grafik_cirkel">
+            <div class="img-wrap jj_grafik_cirkel red">
                 <img src="./assets/img/COLOURBOX27571297.jpg" alt="© Hjørring Jiu-Jitsu klub">
             </div>
 
@@ -250,29 +259,23 @@
                     opsætte kampe.</p>
             </div>
 
-            <div class="jj_historie_img4">
+            <div class="img-wrap jj_historie_img4">
                 <img src="./assets/img/COLOURBOX61201598.jpg" alt="© Hjørring Jiu-Jitsu klub">
             </div>
-        </section>
-        <section class="kontekst">
-            <article class="budoregler">
+        </div>
+        <div class="kontekst">
+            <article class="kort">
+                <h2>Budoregler</h2>
+                <p>Hvad betyder de forskellige bæltefarver? Og hvordan graduerer man?</p>
+                <a href="./budoregler.html">Læs om budoreglerne</a>
 
-                <div class="kort">
-                    <h3>Budoregler</h3>
-                    <p>Budoregler er grundlæggende værdier som respekt, disciplin og ansvar – på og uden for måtten.</p>
-                    <button>Se budoreglerne</button>
-                </div>
             </article>
-            <article class="instruktører">
-
-                <div class="kort">
-                    <h3>Tosenryu</h3>
-                    <p>Tosenryu er begrebet for de teknikker, som vi bruger i vores træning.
-                    </p>
-                    <button>Læs beskrivelsen</button>
-                </div>
+            <article class="kort">
+                <h2>Tosenryu</h2>
+                <p>Tosenryu er begrebet for de teknikker, som vi bruger i vores træning.</p>
+                <a href="./tosenryu.html">Læs om Tosenryu</a>
             </article>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="foot">

@@ -11,6 +11,14 @@
     scroll-behavior: smooth;
 }
 
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     background-image: url(../img/hjorring-jiu-jitsu-klub-main-background.svg);
     background-repeat: no-repeat;
@@ -37,7 +45,7 @@ img {
     display: block;
 }
 
-input {
+input[type="checkbox"] {
     display: none;
 }
 
@@ -48,18 +56,44 @@ input {
     margin: 10px auto 10px;
 }
 
+main {
+    padding: var(--mdSpacer) var(--smSpacer) var(--smSpacer);
+    color: var(--blackOlive)
+}
+
+h1 {
+    font-size: 1.875rem;
+    text-align: center;
+    color: var(--blackOlive);
+    padding: var(--smSpacer) var(--smSpacer) 0;
+}
+
 /* Navigation til Telefon */
+nav {
+    background: var(--eerieBlack);
+}
+
 .navi {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--smSpacer);
-    background: var(--eerieBlack);
     height: 100px;
 }
 
 .navi img {
-    max-height: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.navi a {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.nav-telefon a {
+    width: fit-content;
 }
 
 /* Icons i Navigation */
@@ -121,7 +155,11 @@ input {
 
 #toggle:checked~.burger-menu {
     transform: translateX(0);
+    background: var(--eerieBlack);
 }
+
+
+
 
 .side-menu {
     list-style: none;
@@ -188,6 +226,96 @@ input {
     transform: rotate(45deg);
 }
 
+/* Billede wrapper */
+.img-wrap {
+    margin-bottom: var(--mdSpacer);
+    position: relative;
+}
+
+.img-wrap::after {
+    content: "© Hjørring Jiu-Jitsu Klub";
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--white);
+    opacity: 0.75;
+    pointer-events: none;
+    user-select: none;
+}
+
+.img-wrap.inverted::after {
+    color: var(--eerieBlack);
+}
+
+.img-wrap.red::after {
+    color: var(--red);
+}
+
+/* Kontekstituel Navigation */
+
+.kontekst h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.kontekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+    width: 100%;
+}
+
+.news,
+.arrangement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.kort {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid var(--blackOlive);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: var(--smSpacer);
+}
+
+.kort p {
+    width: 265px;
+    padding: 0;
+
+}
+
+.kort h2,
+.kort h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.75rem;
+    color: var(--blackOlive);
+}
+
+.kort a {
+    width: 220px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--red);
+    margin: auto auto var(--smSpacer);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
 /* Footer til Telefon */
 footer {
     background: var(--eerieBlack);
@@ -210,8 +338,10 @@ footer {
 
 .foot img {
     max-height: 100px;
+    object-fit: contain;
 }
 
+.foot h2,
 .foot h3 {
     font-size: 1rem;
     font-weight: normal;
@@ -268,12 +398,31 @@ footer {
 }
 
 @media screen and (min-width:768px) {
+
+    /* Header */
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* Copyright */
     .copyright-desk {
         display: block;
     }
 
     .copyright-telefon {
         display: none;
+    }
+
+    /* Kontekstituel Navigation */
+    .kontekst {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .news h2,
+    .arrangement h2 {
+        padding-left: 0;
     }
 
     /* Footer til Desktop */
@@ -384,5 +533,34 @@ footer {
 
     .nav-telefon {
         display: none;
+    }
+
+    /* Main */
+
+    .navi,
+    .foot,
+    main,
+    header,
+    .kontekst {
+        max-width: 1232px;
+        margin: 0 auto;
+    }
+
+    /* Billede Wrapper */
+    .img-wrap {
+        max-width: 1232px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .img-wrap img {
+        position: absolute;
+        height: 100%;
+    }
+
+    /* Kontekstituel Navigation */
+    .kontekst {
+        max-width: 1232px;
     }
 }

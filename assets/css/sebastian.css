@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    line-height: 150%;
-
-}
-
-p {
-    font-size: 16px;
-}
-
 /* Variables */
 :root {
     --red: rgb(238, 32, 45);
@@ -41,30 +27,28 @@ img {
 }
 
 /* Main */
-
-h1 {
-    text-align: center;
-    padding: 10px 10px 0;
-}
-
-.border {
-    height: 3px;
-    width: 67%;
-    background-color: var(--red);
-    margin: 10px auto 10px;
-}
-
 .klubteksten {
-    padding: var(--smSpacer);
-
-    p {
-        padding: 15px 0px 0px 0px;
-    }
-
     img {
         max-width: 100%;
-        padding-top: var(--smSpacer);
     }
+}
+
+.klubparagraphs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+    margin-bottom: var(--smSpacer);
+}
+
+.gammelklub::after {
+    top: 0px;
+    bottom: auto;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--blackOlive);
 }
 
 .klubtekst {
@@ -81,49 +65,43 @@ h1 {
 }
 
 .gradueringteksten {
-    padding: 25px 25px 25px 25px;
-
-    p {
-        padding: 15px 0px 0px 0px;
-    }
-
+    margin-bottom: var(--mdSpacer);
 
     img {
         width: 100%;
-        height: 350px;
+        height: 100%;
         object-fit: cover;
         display: block;
-        object-position: 0 100%;
-        padding-top: var(--smSpacer);
-        padding-bottom: var(--smSpacer);
-    }
-
-    .sommerlejr2 {
-        object-position: center;
-        padding-top: 0px;
-        padding-bottom: 0px;
     }
 }
 
-.toptext {
-    padding-top: 0px;
+.gradtextsection,
+.gradtextsection2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+    margin-bottom: var(--smSpacer);
+}
+
+.img-wrap.belts {
+    margin-bottom: var(--smSpacer);
 }
 
 .medlemskabtekst {
-    padding: 0px 15px 15px 25px;
-
-    p {
-        padding: 15px 0px 0px 0px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+    margin-bottom: var(--mdSpacer);
 
     img {
         max-width: 100%;
-        padding-top: var(--smSpacer);
     }
 }
 
-.fwb {
-    font-weight: bold;
+.medlemskabtekstsection {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
 }
 
 .medlemimg {
@@ -132,7 +110,6 @@ h1 {
     object-fit: cover;
     display: block;
     object-position: 0 100%;
-    padding-top: var(--smSpacer);
 }
 
 .medlemimg2 {
@@ -140,22 +117,31 @@ h1 {
     height: 350px;
     object-fit: cover;
     display: block;
-    padding-top: 0px;
-    padding-bottom: var(--smSpacer);
+    object-position: 0 67%;
+}
+
+.medlemimages {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+}
+
+.medlemimages .img-wrap {
+    margin: 0;
+    min-height: 350px;
 }
 
 
 /* Klub kort til venskabsklubber */
 a {
-    text-decoration: none;
     color: black;
 }
 
 .allcards {
-    padding-top: var(--smSpacer);
+    margin-bottom: var(--mdSpacer);
 }
 
-.allcards h3 {
+.allcards h2 {
     font-size: 16px;
 }
 
@@ -179,8 +165,8 @@ a {
         border-radius: 50%;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -204,8 +190,8 @@ a {
         border-radius: 50%;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -228,8 +214,8 @@ a {
         max-width: 100px;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -254,70 +240,8 @@ a {
         border-radius: 50%;
     }
 
-    h3 {
-        padding: 25px 0px 25px 25px;
-    }
-}
-
-/* Related articles */
-
-.relatedarticles {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    padding-left: var(--smSpacer);
-    padding-right: var(--smSpacer);
-}
-
-.articles {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    border: 1px solid black;
-    padding: var(--smSpacer);
-    border-radius: 5px;
-    margin-bottom: var(--smSpacer);
-    max-width: 500px;
-
-    a {
-        background-color: var(--red);
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 0.8rem;
-        font-weight: bold;
-        color: white;
-    }
-
-    p {
-        padding-bottom: 15px;
-    }
-}
-
-.articles2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 500px;
-    border: 1px solid black;
-    padding: var(--smSpacer);
-    border-radius: 5px;
-    margin-bottom: var(--smSpacer);
-
-    a {
-        background-color: var(--red);
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 0.8rem;
-        font-weight: bold;
-        color: white;
-    }
-
-    p {
-        padding-bottom: 15px;
+    h2 {
+        padding: var(--smSpacer) 0px var(--smSpacer) var(--smSpacer);
     }
 }
 
@@ -328,14 +252,9 @@ a {
     }
 }
 
-.klubbenshistorieimg {
-    padding-bottom: var(--smSpacer);
-}
-
-
 @media screen and (min-width:768px) {
 
-    .allcards h3 {
+    .allcards h2 {
         font-size: 20px;
     }
 
@@ -351,31 +270,23 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 1000px;
-        margin: auto;
+        margin: 0 auto var(--mdSpacer);
     }
 
     .headerimg {
         height: 450px;
     }
 
-    .relatedarticles {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    .klubbengrid {
+    .klubteksten {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         align-items: start;
-        padding-bottom: var(--smSpacer);
-        max-width: 1200px;
-        margin: auto;
+        max-width: 1232px;
+        margin: 0 auto var(--mdSpacer);
     }
 
-    .klubbenshistorieimg {
+    .gammelklub {
         max-width: 600px;
         height: auto;
         grid-column: 2;
@@ -384,6 +295,7 @@ a {
 
     .klubparagraphs {
         grid-column: 1;
+        margin: 0;
     }
 
     .medlemskabtekst {
@@ -391,9 +303,8 @@ a {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         align-items: start;
-        padding-bottom: var(--smSpacer);
-        max-width: 1200px;
-        margin: auto;
+        max-width: 1232px;
+        margin: 0 auto var(--mdSpacer);
     }
 
     .medlemimages {
@@ -411,33 +322,31 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
-        gap: 2rem;
-        padding-bottom: var(--smSpacer);
-        max-width: 1200px;
-        margin: auto;
-
-        .belts {
-            max-height: 723x;
-        }
-
+        gap: var(--smSpacer);
+        max-width: 1232px;
+        margin-bottom: var(--mdSpacer);
     }
 
+    .gradueringteksten .img-wrap,
+    .klubteksten .img-wrap {
+        margin: 0;
+    }
 
     .belts img {
-        height: 100%;
-        padding: 0%;
-        object-position: -100px;
+        object-position: -120px;
 
     }
 
     .gradtextsection {
         grid-column: 1;
         grid-row: 1;
+        margin: 0;
     }
 
     .gradtextsection2 {
         grid-column: 2;
         grid-row: 2;
+        margin: 0;
     }
 
     .belts {
@@ -455,90 +364,28 @@ a {
 @media screen and (min-width:840px) {
 
     .belts img {
-        height: 100%;
-        padding: 0%;
         object-position: -50px;
 
     }
 }
 
 @media screen and (min-width:965px) {
-    .belts {
-
-        img {
-            max-height: 500px;
-            object-position: bottom;
-        }
+    .belts img {
+        object-position: bottom;
     }
+
+    .img-wrap {
+        max-width: 1232px;
+        width: 100%;
+        min-height: 100%;
+        position: relative;
+        padding: 0;
+    }
+
 }
 
-/* Footer til Telefon */
-.footer-telefon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: var(--smSpacer);
-    background: var(--eerieBlack);
-    color: var(--white);
-}
-
-.footer-telefon a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.footer-telefon img {
-    max-height: 100px;
-}
-
-.footer-telefon h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: underline;
-    text-align: center;
-}
-
-
-.tider {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.dag {
-    display: flex;
-    justify-content: space-between;
-    gap: var(--smSpacer)
-}
-
-.icon-a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.icon-a i {
-    color: var(--red);
-}
-
-.some {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.some i {
-    font-size: 3rem;
-}
-
-/* Copyright i Footer til Telefon */
-.copyright {
-    background: var(--red);
-    text-align: center;
-    padding: 10px;
-    color: var(--white);
+@media screen and (min-width: 1024px) {
+    .img-wrap.gammelklub img {
+        height: auto;
+    }
 }

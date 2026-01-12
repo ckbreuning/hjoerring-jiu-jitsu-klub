@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>Om Jiu-Jitsu</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/Lerke.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 </head>
@@ -17,14 +18,16 @@
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="navi nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -71,99 +74,92 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html" class="active">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
-
-    <div class="om_jj_header">
-        <img src="./assets/img/wamacongress.jpg" alt="© Hjørring Jiu-Jitsu klub">
-    </div>
-
-    <h1>Om Jiu-Jitsu</h1>
-
+    <header>
+        <div class="om_jj_header">
+            <img src="./assets/img/wamacongress.jpg" alt="© Hjørring Jiu-Jitsu klub">
+        </div>
+        <h1>Om Jiu-Jitsu</h1>
+        <div class="border"></div>
+    </header>
     <main>
-        <section class="om_jj_indhold">
+        <div class="om_jj_indhold">
             <div class="om_jj_tekst">
                 <p>Jiu-Jitsu er en japansk kampsportsdisciplin, der tager udgangspunkt i selvforsvar.</p>
-
                 <p>Grundidéen i Jiu-Jitsu er, at man lærer at forsvare sig ved at pacificere den, der angriber – med
                     teknik
                     i stedet for styrke.
                 </p>
-
                 <p>
                     Jiu-Jitsu træner man kast, holdegreb, låse, undvigelser, slag, spark og parader, og man forsvarer
                     sig
                     både med afstand til modstanderen og helt tæt på.
                 </p>
-
                 <p>Som Jiu-Jitsu-udøver opbygger man sin selvtillid, opnår selvdisciplin, får selvkontrol, kondition,
                     styrke
                     og et godt kammeratskab med klubkammeraterne – og sidst men ikke mindst lærer man at forsvare sig
                     selv.
                 </p>
             </div>
-
-            <div class="om_jj_img">
+            <div class="img-wrap om_jj_img">
                 <img src="./assets/img/solopgang2.jpg" alt="© Hjørring Jiu-Jitsu klub">
             </div>
-        </section>
+        </div>
+        <div class="kontekst">
+            <article class="kort">
+                <h2>Budoregler</h2>
+                <p>I klubben følger vi nogle bestemte regler for at opretholde vores værdier.</p>
+                <a href="./budoregler.html">Læs om budoreglerne</a>
 
-        <section class="kontekst">
-            <article class="budoregler">
-
-                <div class="kort">
-                    <h3>Budoregler</h3>
-                    <p>Budoregler er grundlæggende værdier som respekt, disciplin og ansvar – på og uden for måtten.</p>
-                    <button>Se budoreglerne</button>
-                </div>
             </article>
-            <article class="instruktører">
-
-                <div class="kort">
-                    <h3>Tosenryu</h3>
-                    <p>Tosenryu er begrebet for de teknikker, som vi bruger i vores træning.
-                    </p>
-                    <button>Læs beskrivelsen</button>
-                </div>
+            <article class="kort">
+                <h2>Tosenryu</h2>
+                <p>Tosenryu er begrebet for de teknikker, som vi bruger i vores træning.</p>
+                <a href="./tosenryu.html">Læs om Tosenryu</a>
             </article>
-        </section>
+        </div>
     </main>
+    <!-- Footer -->
     <footer>
         <div class="foot">
             <a href="#forside" class="img"><img src="./assets/img/klub_logo_white.png"

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,16 @@
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="navi nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -69,54 +71,57 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html" class="active">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
-
-    <div class="tosenryu_header">
-        <img src="./assets/img/wamacongress2.jpg" alt="© Hjørring Jiu-Jitsu klub">
-    </div>
-
-    <h1>Tosenryu</h1>
-
+    <header>
+        <div class="tosenryu_header">
+            <img src="./assets/img/wamacongress2.jpg" alt="© Hjørring Jiu-Jitsu klub">
+        </div>
+        <h1>Tosenryu</h1>
+        <div class="border"></div>
+    </header>
     <main>
 
-        <section class="tosenryu_indhold">
+        <div class="tosenryu_indhold">
             <div class="tosenryu_tekst1">
                 <p>
                     <span>Hvad er Tosenryu?</span>
@@ -143,28 +148,21 @@
             <div class="tosenryu_tekst3">
                 <p>Tosenryu er velegnet for folk, der gerne vil lære teknik indenfor selvforsvar.</p>
             </div>
-        </section>
-        <section class="kontekst">
-            <article class="venskabsklubber">
+        </div>
+        <div class="kontekst">
+            <article class="kort">
+                <h2>Venskabsklubber</h2>
+                <p>Hos vores venskabsklubber handler det om fællesskab, støtte og gode oplevelser.</p>
+                <a href="./venskabsklubber.html">Se vores venner</a>
 
-                <div class="kort">
-                    <h3>Venskabsklubber</h3>
-                    <p>Hos vores venskabsklubber handler det om fællesskab, støtte og gode oplevelser. Her kan alle være
-                        med – på måtten og udenfor.</p>
-                    <button>Se oversigten</button>
-                </div>
             </article>
-            <article class="instruktører">
-
-                <div class="kort">
-                    <h3>Instruktører</h3>
-                    <p>Mød vores dygtige og erfarne instruktører der skaber tryg og motiverende træning for alle
-                        niveauer
-                    </p>
-                    <button>Mød dem her</button>
-                </div>
+            <article class="kort">
+                <h2>Instruktører</h2>
+                <p>Mød vores dygtige og erfarne instruktører der skaber tryg og motiverende træning for alle niveauer.
+                </p>
+                <a href="./intruktoerer.html">Mød vores instruktører</a>
             </article>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="foot">
