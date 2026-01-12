@@ -32,17 +32,39 @@ img {
 
 /* Header image */
 
-.wamaheader {
-    max-width: 100%;
-    max-height: 500px;
+.headerimg {
+    width: 100%;
+    height: 300px;
     margin: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Main */
 
 h1 {
     text-align: center;
+    padding: 10px 10px 0;
+}
+
+.border {
+    height: 3px;
+    width: 67%;
+    background-color: var(--red);
+    margin: 10px auto 10px;
+}
+
+.klubteksten {
     padding: var(--smSpacer);
+
+    p {
+        padding: 15px 0px 0px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        padding-top: var(--smSpacer);
+    }
 }
 
 .klubtekst {
@@ -58,8 +80,8 @@ h1 {
     }
 }
 
-.gradueringtekst {
-    padding: 0px 25px 25px 25px;
+.gradueringteksten {
+    padding: 25px 25px 25px 25px;
 
     p {
         padding: 15px 0px 0px 0px;
@@ -78,8 +100,8 @@ h1 {
 
     .sommerlejr2 {
         object-position: center;
-        padding-top: var(--smSpacer);
-        padding-bottom: var(--smSpacer);
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -88,7 +110,7 @@ h1 {
 }
 
 .medlemskabtekst {
-    padding: 0px 15px 15px 15px;
+    padding: 0px 15px 15px 25px;
 
     p {
         padding: 15px 0px 0px 0px;
@@ -111,22 +133,30 @@ h1 {
     display: block;
     object-position: 0 100%;
     padding-top: var(--smSpacer);
-    padding-bottom: var(--smSpacer);
 }
 
-.medlemskabheader {
+.medlemimg2 {
     width: 100%;
-    max-height: 350px;
+    height: 350px;
     object-fit: cover;
     display: block;
-    object-position: 0 100%;
+    padding-top: 0px;
     padding-bottom: var(--smSpacer);
 }
 
-/* Klub kort */
+
+/* Klub kort til venskabsklubber */
 a {
     text-decoration: none;
     color: black;
+}
+
+.allcards {
+    padding-top: var(--smSpacer);
+}
+
+.allcards h3 {
+    font-size: 16px;
 }
 
 .clubcard1 {
@@ -149,7 +179,32 @@ a {
         border-radius: 50%;
     }
 
-    h2 {
+    h3 {
+        padding: 25px 0px 25px 25px;
+    }
+}
+
+.clubcard2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--smSpacer);
+    height: 130px;
+    max-width: 80%;
+    background-color: rgb(224, 224, 224);
+    padding: var(--smSpacer);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--blackOlive);
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+
+    h3 {
         padding: 25px 0px 25px 25px;
     }
 }
@@ -173,7 +228,7 @@ a {
         max-width: 100px;
     }
 
-    h2 {
+    h3 {
         padding: 25px 0px 25px 25px;
     }
 }
@@ -199,7 +254,291 @@ a {
         border-radius: 50%;
     }
 
-    h2 {
+    h3 {
         padding: 25px 0px 25px 25px;
     }
+}
+
+/* Related articles */
+
+.relatedarticles {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding-left: var(--smSpacer);
+    padding-right: var(--smSpacer);
+}
+
+.articles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid black;
+    padding: var(--smSpacer);
+    border-radius: 5px;
+    margin-bottom: var(--smSpacer);
+    max-width: 500px;
+
+    a {
+        background-color: var(--red);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    p {
+        padding-bottom: 15px;
+    }
+}
+
+.articles2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    border: 1px solid black;
+    padding: var(--smSpacer);
+    border-radius: 5px;
+    margin-bottom: var(--smSpacer);
+
+    a {
+        background-color: var(--red);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    p {
+        padding-bottom: 15px;
+    }
+}
+
+.klubtekst {
+
+    .relatedarticles {
+        padding-top: var(--smSpacer);
+    }
+}
+
+.klubbenshistorieimg {
+    padding-bottom: var(--smSpacer);
+}
+
+
+@media screen and (min-width:768px) {
+
+    .allcards h3 {
+        font-size: 20px;
+    }
+
+    .relatedarticles {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Grid til venskabsklubber */
+
+    .allcards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .headerimg {
+        height: 450px;
+    }
+
+    .relatedarticles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .klubbengrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: start;
+        padding-bottom: var(--smSpacer);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .klubbenshistorieimg {
+        max-width: 600px;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .klubparagraphs {
+        grid-column: 1;
+    }
+
+    .medlemskabtekst {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        padding-bottom: var(--smSpacer);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .medlemimages {
+        max-width: 600px;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .medlemskabtekstsection {
+        grid-column: 1;
+    }
+
+    .gradueringteksten {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        padding-bottom: var(--smSpacer);
+        max-width: 1200px;
+        margin: auto;
+
+        .belts {
+            max-height: 723x;
+        }
+
+    }
+
+
+    .belts img {
+        height: 100%;
+        padding: 0%;
+        object-position: -100px;
+
+    }
+
+    .gradtextsection {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .gradtextsection2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .belts {
+        grid-column: 2;
+        grid-row: 1;
+
+    }
+
+    .sommerlejr2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+@media screen and (min-width:840px) {
+
+    .belts img {
+        height: 100%;
+        padding: 0%;
+        object-position: -50px;
+
+    }
+}
+
+@media screen and (min-width:965px) {
+    .belts {
+
+        img {
+            max-height: 500px;
+            object-position: bottom;
+        }
+    }
+}
+
+/* Footer til Telefon */
+.footer-telefon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: var(--smSpacer);
+    background: var(--eerieBlack);
+    color: var(--white);
+}
+
+.footer-telefon a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-telefon img {
+    max-height: 100px;
+}
+
+.footer-telefon h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.tider {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dag {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--smSpacer)
+}
+
+.icon-a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-a i {
+    color: var(--red);
+}
+
+.some {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.some i {
+    font-size: 3rem;
+}
+
+/* Copyright i Footer til Telefon */
+.copyright {
+    background: var(--red);
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
 }

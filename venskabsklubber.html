@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/sebastian.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="forside">
@@ -23,6 +24,46 @@
             <i class="fa-solid fa-bars icon-menu"></i>
             <i class="fa-solid fa-xmark icon-x"></i>
         </label>
+    </nav>
+
+    <!-- Navigation til Desktop -->
+    <nav class="navi nav-desktop">
+        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
+        <ul class="nav-menu">
+            <li class="dropdown-desk">
+                <!-- Tilføj class="active" til den aktive side  -->
+                <a href="./omKlubben.html">Om Klubben
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="./intruktoerer.html">Instruktører</a></li>
+                    <li><a href="./tosenryu.html">Tosenryu</a></li>
+                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-desk">
+                <a href="./traening.html">Hold og Træning
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="./udstyr.html">Udstyr</a></li>
+                    <li><a href="./medlemskab.html">Medlemskab</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-desk">
+                <a href="#">Om Jiu-Jitsu
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu three">
+                    <li><a href="./budoregler.html">Budoregler</a></li>
+                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                </ul>
+            </li>
+            <li><a href="./arrangementer.html">Arrangementer</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
     </nav>
 
     <div class="burger-menu">
@@ -108,47 +149,59 @@
         </ul>
     </nav>
     <Header>
-        <img class="wamaheader" loading="lazy" src="./assets/img/wamacongress.jpg"
+        <img class="headerimg" loading="lazy" src="./assets/img/wamacongress.jpg"
             alt="Et billede af flere klubber samlet til World Alliance of Martial Arts kongress.">
     </Header>
     <main>
         <h1>Venskabsklubber</h1>
-        <a href="https://www.waofma.com/" target="_blank">
-            <div class="clubcards">
+        <div class="border"></div>
+        <div class="allcards">
+            <a href="https://www.waofma.com/" target="_blank" class="clubcards">
                 <div class="clubcard1">
                     <img class="wamasmall" loading="lazy" src="./assets/img/WAMA-small.png"
                         alt="Logoet for World Alliance of Martial Arts.">
-                    <h2>World Alliance of Martial Arts</h2>
+                    <h3>World Alliance of Martial Arts</h3>
                 </div>
-            </div>
-        </a>
-        <a href="https://aalborgselvforsvar.dk/selvforsvar-og-ju-jitsu" target="_blank">
-            <div class="clubcards">
-                <div class="clubcard1">
+            </a>
+            <a href="https://aalborgselvforsvar.dk/selvforsvar-og-ju-jitsu" target="_blank" class="clubcards">
+                <div class="clubcard2">
                     <img class="wamasmall" loading="lazy" src="./assets/img/aalborgklublogo.png"
                         alt="Logoet for Aalborg Selvforsvar og Ju-jitsu Klub.">
-                    <h2>Aalborg Selvforsvar & Ju-jitsu Klub</h2>
+                    <h3>Aalborg Selvforsvar & Ju-jitsu Klub</h3>
                 </div>
-            </div>
-        </a>
-        <a href="http://www.chikara.nu/" target="_blank">
-            <div class="clubcards">
+            </a>
+            <a href="http://www.chikara.nu/" target="_blank" class="clubcards">
                 <div class="clubcard3">
                     <img class="wamasmall" loading="lazy" src="./assets/img/chikara.png"
                         alt="Logoet for Chikara selvforsvars klub.">
-                    <h2>Chikara</h2>
+                    <h3>Chikara</h3>
                 </div>
-            </div>
-        </a>
-        <a href="https://www.facebook.com/groups/56799627388/" target="_blank">
-            <div class="clubcards">
+            </a>
+            <a href="https://www.facebook.com/groups/56799627388/" target="_blank" class="clubcards">
                 <div class="clubcard4">
                     <img class="wamasmall" loading="lazy" src="./assets/img/thisted-jiu-jitsu.webp"
                         alt="Logoet for Thisted Jiu Jitsu Klub.">
-                    <h2>Thisted Jiu Jitsu Klub</h2>
+                    <h3>Thisted Jiu Jitsu Klub</h3>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
+        <section class="klubtekst">
+            <section class="relatedarticles">
+                <article class="articles2">
+                    <h2>Tosenryu</h2>
+                    <p>Tosenryu er begrebet for de teknikker, som vi bruger i vores træning.</p>
+                    <a href="./tosenryu.html">Tosenryu</a>
+                </article>
+                <article class="articles">
+                    <h2>Instruktører</h2>
+                    <p>Mød vores dygtige og erfarne instruktører der skaber tryg og motiverende træning for alle
+                        niveauer</p>
+                    <a href="./intruktoerer.html">Instruktører</a>
+                </article>
+
+            </section>
+        </section>
+
     </main>
     <!-- Footer -->
     <footer>
