@@ -8,6 +8,17 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/hjorring-jiu-jitsu-klub-main-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jjh {
+    background-image: url(../img/hjorring-jiu-jitsu-klub-secondary-background.svg);
 }
 
 /* Variables */
@@ -28,6 +39,13 @@ img {
 
 input {
     display: none;
+}
+
+.border {
+    height: 3px;
+    width: 67%;
+    background-color: var(--red);
+    margin: 10px auto 10px;
 }
 
 /* Navigation til Telefon */
@@ -85,24 +103,24 @@ input {
     position: fixed;
     top: 100px;
     height: calc(100vh - 100px);
-    right: -100%;
+    transform: translateX(100%);
     width: 100%;
     background-color: var(--eerieBlack);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    transition: right 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .burger-menu a {
     color: var(--white);
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #toggle:checked~.burger-menu {
-    right: 0;
+    transform: translateX(0);
 }
 
 .side-menu {
@@ -130,6 +148,7 @@ input {
     padding: 10px;
     font-size: 1.5rem;
     user-select: none;
+    padding: 0 10px;
 }
 
 /* Drop-down Menu i Burger Menu  */
@@ -138,7 +157,7 @@ input {
     background: var(--red);
     max-height: 0;
     overflow: hidden;
-    font-weight: 400;
+    font-weight: normal;
     transition: max-height 0.3s ease;
 }
 
@@ -156,10 +175,6 @@ input {
 }
 
 /* Drop-down Menu Animation */
-.toggle-knap {
-    padding: 0;
-}
-
 .toggle-knap::after {
     content: "+";
     color: var(--white);
@@ -176,7 +191,6 @@ input {
 /* Footer til Telefon */
 footer {
     background: var(--eerieBlack);
-
 }
 
 .foot {
@@ -200,9 +214,10 @@ footer {
 
 .foot h3 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: normal;
     text-decoration: underline;
     text-align: center;
+    color: var(--white);
 }
 
 
@@ -222,7 +237,7 @@ footer {
     list-style: none;
     margin: 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -265,7 +280,6 @@ footer {
     .foot {
         display: grid;
         grid-template-areas:
-            "info img some"
             "info img some";
         align-items: center;
         justify-content: space-evenly;
@@ -296,9 +310,8 @@ footer {
 
     .some {
         grid-area: some;
-        flex-direction: column;
         width: 220px;
-        align-items: flex-start;
+        justify-content: center;
     }
 
 }
@@ -328,7 +341,7 @@ footer {
     .nav-menu>li>a {
         color: var(--white);
         text-decoration: none;
-        font-weight: 600;
+        font-weight: bold;
         padding: 10px;
         font-size: 1.125rem;
     }
@@ -351,7 +364,7 @@ footer {
         padding: 10px;
         color: var(--white);
         text-decoration: none;
-        font-weight: 400;
+        font-weight: normal;
     }
 
     .dropdown-menu li a:hover {

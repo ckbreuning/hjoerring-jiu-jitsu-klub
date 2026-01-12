@@ -7,10 +7,11 @@
     <title>Hjørring Jiu-Jitsu Klub</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/christian.css">
+    <link rel="stylesheet" href="./assets/css/scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body class="forside">
+<body id="forside">
     <!-- Menu Toggle -->
     <input type="checkbox" id="toggle">
 
@@ -30,12 +31,12 @@
             <li class="dropdown">
                 <input type="checkbox" id="toggle-klub">
                 <div class="menu-row">
-                    <a href="#">Om Klubben</a>
+                    <a href="./omKlubben.html">Om Klubben</a>
                     <label for="toggle-klub" class="toggle-knap"></label>
                 </div>
                 <ul class="drop-menu">
-                    <li><a href="#">Instruktører</a></li>
-                    <li><a href="#">Tosenryu</a></li>
+                    <li><a href="./intruktoerer.html">Instruktører</a></li>
+                    <li><a href="./tosenryu.html">Tosenryu</a></li>
                     <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
                 </ul>
             </li>
@@ -47,20 +48,20 @@
                 </div>
                 <ul class="drop-menu">
                     <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="#">Medlemskab</a></li>
+                    <li><a href="./medlemskab.html">Medlemskab</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <input type="checkbox" id="toggle-jj">
 
                 <div class="menu-row">
-                    <a href="#">Om Jiu-Jitsu</a>
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu</a>
                     <label for="toggle-jj" class="toggle-knap"></label>
                 </div>
                 <ul class="drop-menu">
                     <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="#">Bæltefarver og Graduering</a></li>
-                    <li><a href="#">Jiu-Jitsuens Historie</a></li>
+                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
                 </ul>
             </li>
             <li class="li-pad"><a href="./arrangementer.html">Arrangementer</a></li>
@@ -74,12 +75,12 @@
         <ul class="nav-menu">
             <li class="dropdown-desk">
                 <!-- Tilføj class="active" til den aktive side  -->
-                <a href="#">Om Klubben
+                <a href="./omKlubben.html">Om Klubben
                     <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Instruktører</a></li>
-                    <li><a href="#">Tosenryu</a></li>
+                    <li><a href="./intruktoerer.html">Instruktører</a></li>
+                    <li><a href="./tosenryu.html">Tosenryu</a></li>
                     <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
                 </ul>
             </li>
@@ -90,17 +91,17 @@
 
                 <ul class="dropdown-menu">
                     <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="#">Medlemskab</a></li>
+                    <li><a href="./medlemskab.html">Medlemskab</a></li>
                 </ul>
             </li>
             <li class="dropdown-desk">
-                <a href="#">Om Jiu-Jitsu
+                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
                     <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown-menu three">
                     <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="#">Bæltefarver og Graduering</a></li>
-                    <li><a href="#">Jiu-Jitsuens Historie</a></li>
+                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
                 </ul>
             </li>
             <li><a href="./arrangementer.html">Arrangementer</a></li>
@@ -108,105 +109,145 @@
         </ul>
     </nav>
     <header>
-        <img src="./assets/img/klubben.png" alt="Billede af klubben og dens medlemmer">
+        <img src="./assets/img/hjorring-jiu-jitsu-klub-group-photo.webp"
+            alt="Gruppefoto af medlemmer i Hjørring Jiu-Jitsu Klub. - © Hjørring Jiu-Jitsu Klub">
         <h1>Hjørring Jiu-Jitsu Klub</h1>
         <div class="border"></div>
     </header>
     <main>
         <section class="om-klubben">
-            <p>Hjørring Jiu-Jitsu Klub blev startet som en Judo og Jiu-Jitsu klub på et nedlagt husmandssted i nærheden
-                af
-                Tårs i 1953.</p>
-            <p>Dette sted var rammen om klubben indtil man valgte at flytte ind i gymnastiksalen på den for længst
-                nedlagte
-                Vestre Skole i Hjørring.</p>
-            <p>Det var i mange år kutymen at man trænede en times Judo efter endt opvarmning og så afsluttede man med en
-                halv times Jiu-Jitsu til slut.</p>
-            <p>I midten af 1980'erne flyttede klubben til dens nuværende lokaler på Buen 4. og her valgte man at dele
-                klubben i to selvstændige klubber, en Judo klub og en Jiu-Jitsu klub med hver sin bestyrelse som tager
-                sig
-                af det praktiske i driften af klubben.</p>
-            <p>Derudover har vi en hovedforening der sørger for alt det praktiske der ligger i at drive klubben.</p>
-            <a href="#" class="main-a">Læs mere om klubben
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-            <img src="./assets/img/paa-strand.jpg" alt="Træning på stranden" class="side">
+            <div class="text-wrap">
+                <p>Hjørring Jiu-Jitsu Klub blev startet som en Judo og Jiu-Jitsu klub på et nedlagt husmandssted i
+                    nærheden
+                    af
+                    Tårs i 1953.</p>
+                <p>Dette sted var rammen om klubben indtil man valgte at flytte ind i gymnastiksalen på den for
+                    længst
+                    nedlagte
+                    Vestre Skole i Hjørring.</p>
+                <p>Det var i mange år kutymen at man trænede en times Judo efter endt opvarmning og så afsluttede
+                    man
+                    med en
+                    halv times Jiu-Jitsu til slut.</p>
+                <p>I midten af 1980'erne flyttede klubben til dens nuværende lokaler på Buen 4. og her valgte man at
+                    dele
+                    klubben i to selvstændige klubber, en Judo klub og en Jiu-Jitsu klub med hver sin bestyrelse som
+                    tager
+                    sig
+                    af det praktiske i driften af klubben.</p>
+                <p>Derudover har vi en hovedforening der sørger for alt det praktiske der ligger i at drive klubben.
+                </p>
+                <a href="./omKlubben.html" class="main-a">Læs mere om klubben
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </a>
+            </div>
+            <div class="img-wrap">
+                <img src="./assets/img/paa-strand.jpg" alt="Træning på stranden" class="side">
+            </div>
         </section>
         <section class="om-jiu-jitsu">
-            <p>Jiu-Jitsu er en sport der giver dig muligheden for at forsvare dig selv i en overfaldssituation. Lige fra
-                et slag til et kniv- overfald.</p>
-            <p>Jiu-jitsu giver dig også en bedre situationsfornemmelse, der gerne skulle holde dig udenfor konflikter.
-                Det giver også større selvtillid, fysik, smidighed og bedre kontrol over din krop.</p>
-            <a href="#" class="main-a">Læs mere om Jit-Jitsuens historie
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-            <img src="./assets/img/wamaseminar1.png" alt="Træning til WAMA Seminar" class="bund">
+            <div class="text-wrap">
+                <p>Jiu-Jitsu er en sport der giver dig muligheden for at forsvare dig selv i en overfaldssituation. Lige
+                    fra
+                    et slag til et kniv- overfald.</p>
+                <p>Jiu-Jitsu giver dig også en bedre situationsfornemmelse, der gerne skulle holde dig udenfor
+                    konflikter.
+                    Det giver også større selvtillid, fysik, smidighed og bedre kontrol over din krop.</p>
+                <a href="./jiu-jitsu_historie.html" class="main-a">Læs mere om Jit-Jitsuens historie
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+            <div class="img-wrap">
+                <img src="./assets/img/wamaseminar1.png" alt="Træning til WAMA Seminar" class="bund">
+            </div>
         </section>
-        <div class="accord">
-            <section class="accordion">
-                <details>
-                    <summary><span class="bold">Træningstider</span></summary>
-                    <div class="text">
-                        <div class="acc-dag acc-pad">
-                            <p>Vores nuværende træningstider er som følger:</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p class="bold">Tirsdag</p>
-                            <p>18:00 - 20:00</p>
-                        </div>
-                        <div class="acc-dag acc-pad">
-                            <p class="bold">Torsdag</p>
-                            <p>18:00 - 20:00</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p>Når det nye begynderhold starter, så ændres tiderne. <a href="#" class="acc-a">Læs mere
-                                    om tidsændringerne <i class="fa-solid fa-chevron-right"></i></a></p>
-                        </div>
+        <section class="accordion">
+            <details>
+                <summary><strong>Træningstider</strong></summary>
+                <div class="text">
+                    <div class="acc-dag acc-pad">
+                        <p>Vores nuværende træningstider er som følger:</p>
                     </div>
-                </details>
-                <details>
-                    <summary><span class="bold">Lokation</span></summary>
-                    <div class="text">
-                        <div class="acc-dag">
-                            <p>Vores lokaler kan findes her:</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p class="bold">Buen 4, 1. Sal, 9800 Hjørring</p>
-                        </div>
+                    <div class="acc-dag">
+                        <p><strong>Tirsdag</strong></p>
+                        <p>18:00 - 20:00</p>
                     </div>
-                </details>
-                <details>
-                    <summary><span class="bold">Medlemskab</span></summary>
-                    <div class="text">
-                        <div class="acc-dag">
-                            <p>De første 4 træningsgange er gratis.</p>
-                        </div>
-                        <div class="acc-dag acc-pad">
-                            <p>Derefter koster det <span class="bold">800kr</span> for at gennemføre et begynderkursus
-                                der varer 3 måneder.</p>
-                        </div>
-                        <div class="acc-dag acc-pad">
-                            <p>Efter man har bestået begynderkurset, koster det <span class="bold">800kr</span> for 6
-                                måneder.</p>
-                        </div>
-                        <div class="acc-dag">
-                            <p>For at tilmelde sig, skal man bare møde op i klubben.</p>
-                        </div>
+                    <div class="acc-dag acc-pad">
+                        <p><strong>Torsdag</strong></p>
+                        <p>18:00 - 20:00</p>
                     </div>
-                </details>
-                <details>
-                    <summary><span class="bold">Klubbens love</span></summary>
-                    <div class="text">
-                        <div class="acc-dag">
-                            <p>Se klubbens love og vedtægter her:</p>
-                        </div>
-                        <div class="acc-dag">
-                            <a href="./assets/HJJK-Klubbens-Love.pdf" target="_blank"><i
-                                    class="fa-regular fa-file-pdf"></i> Klubbens love</a>
-                        </div>
+                    <div class="acc-dag">
+                        <p>Når det nye begynderhold starter, så ændres tiderne. <a href="./traening.html"
+                                class="acc-a">Læs mere
+                                om tidsændringerne <i class="fa-solid fa-chevron-right"></i></a></p>
                     </div>
-                </details>
-            </section>
+                </div>
+            </details>
+            <details>
+                <summary><strong>Lokation</strong></summary>
+                <div class="text">
+                    <div class="acc-dag">
+                        <p>Vores lokaler kan findes her:</p>
+                    </div>
+                    <div class="acc-dag">
+                        <p><strong>Buen 4, 1. Sal, 9800 Hjørring</strong></p>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary><strong>Medlemskab</strong></summary>
+                <div class="text">
+                    <div class="acc-dag">
+                        <p>De første 4 træningsgange er gratis.</p>
+                    </div>
+                    <div class="acc-dag acc-pad">
+                        <p>Derefter koster det <strong>800kr</strong> for at gennemføre et
+                            begynderkursus
+                            der varer 3 måneder.</p>
+                    </div>
+                    <div class="acc-dag acc-pad">
+                        <p>Efter man har bestået begynderkurset, koster det <strong>800kr</strong> for
+                            6
+                            måneder.</p>
+                    </div>
+                    <div class="acc-dag">
+                        <p>For at tilmelde sig, skal man bare møde op i klubben.</p>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary><strong>Klubbens love</strong></summary>
+                <div class="text">
+                    <div class="acc-dag">
+                        <p>Se klubbens love og vedtægter her:</p>
+                    </div>
+                    <div class="acc-dag">
+                        <a href="./assets/HJJK-Klubbens-Love.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i>
+                            Klubbens love</a>
+                    </div>
+                </div>
+            </details>
+        </section>
+        <section class="kontekst">
+            <article class="news">
+                <h2>Nyheder</h2>
+                <div class="kort">
+                    <h3>Begynderhold</h3>
+                    <p>Et nyt begynderhold starter i Februar 2026.</p>
+                    <p>Skal du være en af vores nye medlem?</p>
+                    <button>Se nyt begynderhold</button>
+                </div>
+            </article>
+            <article class="arrangement">
+                <h2>Arrangementer</h2>
+                <div class="kort">
+                    <h3>Ingen kommende kurser</h3>
+                    <p>Der er i øjeblikket ingen kommende kurser.</p>
+                    <p>Hold øje med siden for opdateringer.</p>
+                    <button>Alle arrangementer</button>
+                </div>
+            </article>
+        </section>
     </main>
     <!-- Footer -->
     <footer>

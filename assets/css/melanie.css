@@ -33,6 +33,7 @@ span {
 main {
     padding: 0px var(--xlSpacer);
     justify-content: center;
+    overflow-x: hidden;
 
 }
 
@@ -112,12 +113,12 @@ main {
 .in {
     display: flex;
     margin-top: var(--mdSpacer);
-
 }
 
 .in img {
     border-radius: 50%;
     width: 100%;
+    border: 1px solid var(--eerieBlack) ;
 }
 
 .in figcaption {
@@ -172,6 +173,10 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+form{
+    background-color: var(--white);
+}
+
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,13 +188,16 @@ input[type="submit"] {
 }
 
 .form-row>div {
-    margin: 10px 0 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 @media (max-width:768px) {
+
+    h1{
+        font-size: 30px;
+    }
 
     /* Udstyr */
 
@@ -198,12 +206,12 @@ input[type="submit"] {
         flex-direction: column;
 
     }
-    
+
 
     .usection1 img {
         margin: 0;
         align-self: center;
-        max-width: 50%;
+        max-width: 80%;
     }
 
     .usection2 {
@@ -211,8 +219,10 @@ input[type="submit"] {
         flex-direction: column;
         align-items: center;
         gap: var(--smSpacer);
+    }
 
-
+    .usection2 h2{
+        font-size: 25px;
     }
 
     .usection2 article {
@@ -225,11 +235,41 @@ input[type="submit"] {
     .in {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
 
+
+main{
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.in img{
+    max-width: 50%;
+    justify-self: center;
+}
 }
 
 
+@media (max-width:375px){
 
+    .form-row{
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    }
 
-@media (max-width:375px) {}
+    h1{
+       padding:var(--smSpacer);
+    }
+
+   
+
+    p{
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
