@@ -14,54 +14,16 @@
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
-    </nav>
-
-    <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a class="active" href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="#">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -69,7 +31,7 @@
             <li class="dropdown">
                 <input type="checkbox" id="toggle-klub">
                 <div class="menu-row">
-                    <a href="#">Om Klubben</a>
+                    <a href="./omKlubben.html">Om Klubben</a>
                     <label for="toggle-klub" class="toggle-knap"></label>
                 </div>
                 <ul class="drop-menu">
@@ -106,82 +68,129 @@
             <li class="li-pad"><a href="./kontakt.html">Kontakt</a></li>
         </ul>
     </div>
+
+    <!-- Navigation til Desktop -->
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html" class="active">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
     <Header>
         <img class="headerimg" loading="lazy" src="./assets/img/klubhistorie1.jpg"
             alt="Et billede af flere klubber samlet til World Alliance of Martial Arts kongress.">
-    </Header>
-    <main>
         <h1>Om Klubben</h1>
         <div class="border"></div>
-        <div class="klubteksten">
-            <article class="klubbengrid">
-                <section class="klubparagraphs">
-                    <h3 class="klubh3">Klubbens historie</h3>
-                    <p class="kgrid1">Hjørring Jiu-Jitsu Klub blev startet som en Judo og Jiu-Jitsu klub på et nedlagt
+    </Header>
+    <main>
+        <section class="klubteksten">
+            <!-- <article class="klubbengrid"> -->
+            <div class="klubparagraphs">
+                <div>
+                    <h3>Klubbens historie</h3>
+                    <p class=" kgrid1">Hjørring Jiu-Jitsu Klub blev startet som en Judo og Jiu-Jitsu klub på et
+                        nedlagt
                         husmandssted i
                         nærheden
                         af Tårs i 1953.</p>
-                    <p class="kgrid1">Dette sted var rammen om klubben indtil man valgte at flytte ind i gymnastiksalen
-                        på
-                        den for længst
-                        nedlagte Vestre Skole i Hjørring.</p>
-                    <p class="kgrid1">Det var i mange år kutymen at man trænede en times Judo efter endt opvarmning og
-                        så
-                        afsluttede man
-                        med en
-                        halv times Jiu-Jitsu til slut.</p>
-                    <p class="kgrid1">I midten af 1980'erne flyttede klubben til dens nuværende lokaler på Buen 4. og
-                        her
-                        valgte man at dele
-                        klubben i to selvstændige klubber, en Judo klub og en Jiu-Jitsu klub med hver sin bestyrelse som
-                        tager
-                        sig af det praktiske i driften af klubben. </p>
-                    <p class="kgrid1">Derudover har vi en hovedforening der sørger for alt det praktiske der ligger i at
-                        drive klubben.</p>
-                </section>
-                <img class="klubbenshistorieimg" src="./assets/img/klubhistorie2.jpg"
-                    alt="Et ældre billede af klubbens medlemmer i sort og hvid.">
+                </div>
+                <p class="kgrid1">Dette sted var rammen om klubben indtil man valgte at flytte ind i gymnastiksalen
+                    på
+                    den for længst
+                    nedlagte Vestre Skole i Hjørring.</p>
+                <p class="kgrid1">Det var i mange år kutymen at man trænede en times Judo efter endt opvarmning og
+                    så
+                    afsluttede man
+                    med en
+                    halv times Jiu-Jitsu til slut.</p>
+                <p class="kgrid1">I midten af 1980'erne flyttede klubben til dens nuværende lokaler på Buen 4. og
+                    her
+                    valgte man at dele
+                    klubben i to selvstændige klubber, en Judo klub og en Jiu-Jitsu klub med hver sin bestyrelse som
+                    tager
+                    sig af det praktiske i driften af klubben. </p>
+                <p class="kgrid1">Derudover har vi en hovedforening der sørger for alt det praktiske der ligger i at
+                    drive klubben.</p>
+            </div>
+            <div class="img-wrap inverted gammelklub">
+                <img src="./assets/img/klubhistorie2.jpg" alt="Et ældre billede af klubbens medlemmer i sort og hvid.">
+            </div>
+        </section>
+        <section class="kontekst">
+            <article class="kort">
+                <h3>Instruktører</h3>
+                <p>Mød vores dygtige og erfarne instruktører der skaber tryg og motiverende træning for alle
+                    niveauer.</p>
+                <a href="./intruktoerer.html">Mød vores instruktører</a>
+
             </article>
-            <section class="relatedarticles">
-                <article class="articles">
-                    <h2>Instruktører</h2>
-                    <p>Mød vores dygtige og erfarne instruktører der skaber tryg og motiverende træning for alle
-                        niveauer</p>
-                    <a href="./intruktoerer.html">Instruktører</a>
-                </article>
-
-                <article class="articles2">
-                    <h2>Venskabsklubber</h2>
-                    <p>Hos vores venskabsklubber handler det om fællesskab, støtte og gode oplevelser. Her kan alle være
-                        med på måtten og udenfor.</p>
-                    <a href="./venskabsklubber.html">Venskabsklubber</a>
-                </article>
-            </section>
-        </div>
-
+            <article class="kort">
+                <h3>Venskabsklubber</h3>
+                <p>Hos vores venskabsklubber handler det om fællesskab, støtte og gode oplevelser.</p>
+                <a href="./tosenryu.html">Se vores venner</a>
+            </article>
+        </section>
     </main>
+    <!-- Footer -->
     <footer>
-        <div class="footer-telefon">
+        <div class="foot">
             <a href="#forside" class="img"><img src="./assets/img/klub_logo_white.png"
                     alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-            <div class="tider">
-                <h3>Træningstider</h3>
-                <div class="dag">
-                    <p>Tirsdag:</p>
-                    <p>18:00 - 20:00</p>
+            <div class="info">
+                <div class="tider">
+                    <h3>Træningstider</h3>
+                    <div class="dag">
+                        <p>Tirsdag:</p>
+                        <p>18:00 - 20:00</p>
+                    </div>
+                    <div class="dag">
+                        <p>Torsdag:</p>
+                        <p>18:00 - 20:00</p>
+                    </div>
                 </div>
-                <div class="dag">
-                    <p>Torsdag:</p>
-                    <p>18:00 - 20:00</p>
+                <div class="adresse">
+                    <h3>Adresse</h3>
+                    <p>Buen 4, 1. sal, 9800 Hjørring</p>
                 </div>
-            </div>
-            <div class="adresse">
-                <h3>Adresse</h3>
-                <p>Buen 4, 1. sal, 9800 Hjørring</p>
-            </div>
-            <div class="kontakt">
-                <h3>Kontakt</h3>
-                <a href="tel:+45-68-22-31-27">+45 68 22 31 27</a>
+                <div class="kontakt">
+                    <h3>Kontakt</h3>
+                    <a href="tel:+45-68-22-31-27">+45 68 22 31 27</a>
+                </div>
             </div>
             <ul class="some">
                 <li><a href="https://www.facebook.com/groups/484235388306687/" target="_blank"><i
@@ -189,10 +198,14 @@
                 <li><a href="https://www.instagram.com/hjoerring_jiu_jitsu/" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a></li>
             </ul>
+
         </div>
-        <div class="copyright">
-            <p>Copyright Hjørring Jiu-Jitsu klub 2024 ©</p>
-            <p>Alle rettigheder forbeholdes</p>
+        <div class="copyright copyright-telefon">
+            <p>Copyright Hjørring Jiu-Jitsu klub 2024 </p>
+            <p>© Alle rettigheder forbeholdes</p>
+        </div>
+        <div class="copyright copyright-desk">
+            <p>Copyright Hjørring Jiu-Jitsu klub 2024 © Alle rettigheder forbeholdes</p>
         </div>
     </footer>
 </body>

@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hjjk - Udstyr</title>
-    
+
     <link rel="stylesheet" href="./assets/css/melanie.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
- <nav class="navi nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <!-- Menu Toggle -->
+    <input type="checkbox" id="toggle">
+
+    <!-- Navigation til Telefon -->
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -68,92 +76,98 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="#">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html" class="active">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
-
-<aside>
-<div class="hero">
-        <img src="./assets/img/klubben.png" alt="©Hjørring Jiu-Jitsu Klub">
-    </div>
-</aside>
-    <main class="udstyr">
-    
-    <h1>Udstyr</h1>
-    <section class="usection1">
-        <article class="uarticle1">
-            <p>Det er <span>ikke nødvendigt</span> at købe udstyr til at træne med for at gennemføre et kursus, det eneste man skal have med er tøj som kan tåle at blive rykket lidt i samt bare fødder.</p>
-            <br>
-            <p>Den dragt du ser vores medlemmer træne i kaldes en Gi og består af tre dele: </p>
-            <br>
-            <ul>
-                <li>Kimono = Jakke</li>
-                <li>Obi = Bælte</li>
-                <li>Zurbon = Bukser</li>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
             </ul>
-<br>
-            <p>
-I Jiu-Jitsu sporten udøver vi ofte teknikker, hvor der bliver trækket eller rykket i Gien, derfor bærer kvinder typisk en hvid t-shirt under dragten</p>
-<br>
-<p>Ønsker man at købe en Gi kan disse bestilles i klubben og koster fra <span>omkring 400,-</span> for den billigste model til luksus udgaven til <span>650,-.</span></p>
+        </div>
+    </nav>
+    <header>
+        <div class="hero">
+            <img src="./assets/img/klubben.png" alt="©Hjørring Jiu-Jitsu Klub">
+        </div>
+        <h1>Udstyr</h1>
+        <div class="border"></div>
+    </header>
 
+    <main>
+        <section class="usection1">
+            <div class="udstyr">
+                <p>Det er <strong>ikke nødvendigt</strong> at købe udstyr til at træne med for at gennemføre et kursus,
+                    det
+                    eneste man skal have med er tøj som kan tåle at blive rykket lidt i samt bare fødder.</p>
+                <div>
+                    <p>Den dragt du ser vores medlemmer træne i kaldes en Gi og består af tre dele: </p>
+                    <ul>
+                        <li>Kimono = Jakke</li>
+                        <li>Obi = Bælte</li>
+                        <li>Zurbon = Bukser</li>
+                    </ul>
+                </div>
 
-        </article>
-        <img src="./assets/img/gi-hvid.jpg" alt="©Hjørring Jiu-Jitsu Klub">
-    </section>
+                <p>
+                    I Jiu-Jitsu sporten udøver vi ofte teknikker, hvor der bliver trækket eller rykket i Gien, derfor
+                    bærer kvinder typisk en hvid t-shirt under dragten</p>
+                <p>Ønsker man at købe en Gi kan disse bestilles i klubben og koster fra <strong>omkring 400kr</strong>
+                    for
+                    den billigste model til luksus udgaven til <strong>650kr</strong>.</p>
+            </div>
+            <div class="img-wrap inverted">
+                <img src="./assets/img/gi-hvid.jpg" alt="© Hjørring Jiu-Jitsu Klub">
+            </div>
+        </section>
+        <section class="kontekst">
+            <article class="kort">
+                <h3>Medlemskab</h3>
+                <p>Se hvad det betyder at være medlem i Hjørring Jiu-Jitsu Klub.</p>
+                <p>Læs mere om vores medlemskab.</p>
+                <a href="./medlemskab.html">Se medlemskab</a>
 
-    <section class="usection2">
-        <article class="uarticle2">
-            <h2>Medlemskab</h2>
-            <p>Læs mere om vores medlemskab og se hvordan du bliver medlem her </p>
-            <a href="./medlemskab.html">Se Medlemskaber</a>
-        </article>
+            </article>
+            <article class="kort">
+                <h3>Bæltefarver og Graduering</h3>
+                <p>Hvad betyder de forskellige bæltefarver? Og hvordan graduerer man?</p>
+                <a href="./baeltefarver.html">Læs mere om det her</a>
+            </article>
+        </section>
+    </main>
 
-        <article class="uarticle2">
-            <h2>Bæltefarver og Graduering</h2>
-            <p>Hvad betyder de forskellige bæltefarver? </p>
-            <a href="./baeltefarver.html">Se oversigten</a>
-        </article>
-    </section>
-</main>
-
- <footer>
+    <footer>
         <div class="foot">
             <a href="#forside" class="img"><img src="./assets/img/klub_logo_white.png"
                     alt="Hjørring Jiu-Jitsu Klub Logo"></a>
@@ -195,4 +209,5 @@ I Jiu-Jitsu sporten udøver vi ofte teknikker, hvor der bliver trækket eller ry
         </div>
     </footer>
 </body>
+
 </html>

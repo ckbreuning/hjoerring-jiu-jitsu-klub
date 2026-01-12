@@ -15,14 +15,16 @@
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="navi nav-telefon">
-        <a href="./index.html">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -69,43 +71,46 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html" class="active">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html" class="active">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
         <header>
@@ -153,7 +158,6 @@
                         klubben.</p>
                 </div>
             </div>
-            </div>
             <div class="img-wrap">
                 <div class="slideshow">
                     <div class="slides">
@@ -194,21 +198,18 @@
             </div>
         </section>
         <section class="kontekst">
-            <article class="news">
-                <div class="kort">
-                    <h3>Medlemskab</h3>
-                    <p>Se hvad det betyder at være medlem i Hjørring Jiu-Jitsu Klub.</p>
-                    <p>Læs mere om vores medlemskab.</p>
-                    <button>Se medlemskab</button>
-                </div>
+            <article class="kort">
+                <h3>Medlemskab</h3>
+                <p>Se hvad det betyder at være medlem i Hjørring Jiu-Jitsu Klub.</p>
+                <p>Læs mere om vores medlemskab.</p>
+                <a href="./medlemskab.html">Se medlemskab</a>
+
             </article>
-            <article class="arrangement">
-                <div class="kort">
-                    <h3>Ingen kommende kurser</h3>
-                    <p>Der er i øjeblikket ingen kommende kurser.</p>
-                    <p>Hold øje med siden for opdateringer.</p>
-                    <button>Alle arrangementer</button>
-                </div>
+            <article class="kort">
+                <h3>Ingen kommende kurser</h3>
+                <p>Der er i øjeblikket ingen kommende kurser.</p>
+                <p>Hold øje med siden for opdateringer.</p>
+                <a href="./arrangementer.html">Jiu-Jitsuens historie</a>
             </article>
         </section>
     </main>
