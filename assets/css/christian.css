@@ -63,26 +63,6 @@ main a {
     font-weight: bold;
 }
 
-.img-wrap {
-    position: relative;
-}
-
-.img-wrap::after {
-    content: "© Hjørring Jiu-Jitsu Klub";
-    position: absolute;
-    bottom: 0px;
-    left: 5px;
-    font-size: 10px;
-    color: var(--white);
-    opacity: 0.5;
-    pointer-events: none;
-    user-select: none;
-}
-
-.img-wrap.inverted::after {
-    color: var(--eerieBlack);
-}
-
 section img {
     height: 310px;
     object-position: 0 56%;
@@ -169,13 +149,37 @@ details[open] summary::after {
     font-size: 1.5rem;
 }
 
-.kursus1 .text-wrap h3 {
-    text-align: center;
-    padding: 0;
+.kursus .text-wrap h2 {
+    text-align: left;
 }
 
-.kursus1 .text-wrap {
-    margin: var(--smSpacer);
+.priser {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.combined {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.img-wrap.fit {
+    height: auto;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.img-wrap.fit img {
+    position: static !important;
+    height: auto !important;
 }
 
 .traener p {
@@ -284,7 +288,8 @@ details[open] summary::after {
     .budo-intro,
     .hold,
     .budo-regler,
-    .traening {
+    .traening,
+    .kursus {
         margin-bottom: var(--mdSpacer);
     }
 
@@ -293,7 +298,6 @@ details[open] summary::after {
         object-position: 0 63%;
         margin: auto;
     }
-
 
     .accordion {
         display: grid;
@@ -312,19 +316,28 @@ details[open] summary::after {
     .budo-intro .text-wrap,
     .budo-regler .text-wrap,
     .hold .text-wrap,
-    .traening .text-wrap {
-        max-width: 700px;
-        margin: 0 auto var(--smSpacer);
-    }
-
+    .traening .text-wrap,
     .kursus1 .text-wrap {
         max-width: 700px;
-        margin: var(--smSpacer) auto;
+        margin: 0 auto var(--smSpacer);
     }
 
     .kontekst {
         max-width: 700px;
         margin: 0 auto;
+    }
+
+    .kursus .text-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .kurs-info {
+        grid-column: 1 / -1;
+    }
+
+    .kursus2 .tilmeldning {
+        grid-column: 1 / -1;
     }
 }
 
@@ -428,4 +441,34 @@ details[open] summary::after {
         flex-direction: column;
         gap: var(--smSpacer);
     }
+
+    .kursus .text-wrap {
+        display: flex;
+        margin: 0;
+    }
+
+    .kursus1 {
+        display: flex;
+        gap: var(--smSpacer);
+    }
+
+    .kursus2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--smSpacer);
+    }
+
+    .kursus1 .img-wrap {
+        grid-column: 2;
+    }
+
+    .kursus2 .img-wrap {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .kursus2 .text-wrap {
+        grid-column: 2;
+    }
+
 }
