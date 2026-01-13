@@ -253,6 +253,12 @@ nav {
     color: var(--red);
 }
 
+.img-wrap.box::after {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 0 5px;
+    left: 0px;
+}
+
 /* Kontekstituel Navigation */
 
 .kontekst h2 {
