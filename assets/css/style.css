@@ -53,7 +53,7 @@ input[type="checkbox"] {
     height: 3px;
     width: 67%;
     background-color: var(--red);
-    margin: 10px auto 10px;
+    margin: 10px auto;
 }
 
 main {
