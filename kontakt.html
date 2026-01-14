@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -7,18 +7,25 @@
     <title>Hjjk - Kontakt</title>
     <link rel="stylesheet" href="./assets/css/melanie.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
 
 <body>
-    <header>
-         <nav class="navi nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
+    <!-- Menu Toggle -->
+    <input type="checkbox" id="toggle">
+
+    <!-- Navigation til Telefon -->
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -65,57 +72,61 @@
     </div>
 
     <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="#">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="hero">
-        <img src="./assets/img/sommerlejr4.png" alt="©Hjørring Jiu-Jitsu Klub">
-    </div>
+    <header>
+        <img src="./assets/img/hjorring-jiu-jitsu-klub-summer-camp-community-meal.webp"
+            alt="Fælles måltid under sommerlejr i Sverige, hvor medlemmer sidder samlet og spiser. - © Hjørring Jiu-Jitsu Klub">
+        <h1>Kontakt</h1>
+        <div class="border"></div>
     </header>
     <main>
-        <h1>Kontakt</h1>
         <p>Hvis du har spørgsmål, ønsker kontakt eller gerne vil starte, så udfyld venligst kontaktformularen.</p>
 
         <form action="index.html">
-
-            <label for="navn">Navn</label>
-            <input type="text" id="navn" name="navn" placeholder="Skriv navn her...">
-
+            <div class="norm-row">
+                <label for="navn">Navn</label>
+                <input type="text" id="navn" name="navn" placeholder="Skriv navn her...">
+            </div>
             <div class="form-row">
                 <div>
                     <label for="mail">Email</label>
@@ -126,16 +137,61 @@
                     <input type="text" id="tlf" name="tlf" placeholder="Skriv telefonnummer her...">
                 </div>
             </div>
-            <label for="emne">Emne</label>
-            <input type="text" id="emne" name="emne" placeholder="Hvorfor vil du gerne kontakte os?">
-
-            <label for="bes">Besked</label>
-            <textarea id="bes" name="bes" rows="5" placeholder="Skriv tekst her..."></textarea>
+            <div class="norm-row">
+                <label for="emne">Emne</label>
+                <input type="text" id="emne" name="emne" placeholder="Hvorfor vil du gerne kontakte os?">
+            </div>
+            <div class="norm-row">
+                <label for="bes">Besked</label>
+                <textarea id="bes" name="bes" rows="5" placeholder="Skriv tekst her..."></textarea>
+            </div>
 
             <input type="submit" value="Send">
         </form>
 
     </main>
+    <!-- Footer -->
+    <footer>
+        <div class="foot">
+            <a href="./index.html" class="img"><img src="./assets/img/klub_logo_white.png"
+                    alt="Hjørring Jiu-Jitsu Klub Logo" loading="lazy"></a>
+            <div class="info">
+                <div class="tider">
+                    <h2>Træningstider</h2>
+                    <div class="dag">
+                        <p>Tirsdag:</p>
+                        <p>18:00 - 20:00</p>
+                    </div>
+                    <div class="dag">
+                        <p>Torsdag:</p>
+                        <p>18:00 - 20:00</p>
+                    </div>
+                </div>
+                <div class="adresse">
+                    <h2>Adresse</h2>
+                    <p>Buen 4, 1. sal, 9800 Hjørring</p>
+                </div>
+                <div class="kontakt">
+                    <h2>Kontakt</h2>
+                    <a href="tel:+45-68-22-31-27">+45 68 22 31 27</a>
+                </div>
+            </div>
+            <ul class="some">
+                <li><a href="https://www.facebook.com/groups/484235388306687/" target="_blank"><i
+                            class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/hjoerring_jiu_jitsu/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+        <div class="copyright copyright-telefon">
+            <p>Copyright Hjørring Jiu-Jitsu klub 2024 </p>
+            <p>© Alle rettigheder forbeholdes</p>
+        </div>
+        <div class="copyright copyright-desk">
+            <p>Copyright Hjørring Jiu-Jitsu klub 2024 © Alle rettigheder forbeholdes</p>
+        </div>
+    </footer>
 </body>
 
 </html>

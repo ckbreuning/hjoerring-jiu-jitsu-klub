@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -10,59 +10,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="forside">
+<body>
     <!-- Menu Toggle -->
     <input type="checkbox" id="toggle">
 
     <!-- Navigation til Telefon -->
-    <nav class="nav-telefon">
-        <a href="#forside">
-            <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars icon-menu"></i>
-            <i class="fa-solid fa-xmark icon-x"></i>
-        </label>
-    </nav>
-
-    <!-- Navigation til Desktop -->
-    <nav class="navi nav-desktop">
-        <a href="#forside"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-        <ul class="nav-menu">
-            <li class="dropdown-desk">
-                <!-- Tilføj class="active" til den aktive side  -->
-                <a href="./omKlubben.html">Om Klubben
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="./intruktoerer.html">Instruktører</a></li>
-                    <li><a href="./tosenryu.html">Tosenryu</a></li>
-                    <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="./traening.html">Hold og Træning
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a href="./udstyr.html">Udstyr</a></li>
-                    <li><a href="./medlemskab.html">Medlemskab</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-desk">
-                <a href="#">Om Jiu-Jitsu
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu three">
-                    <li><a href="./budoregler.html">Budoregler</a></li>
-                    <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
-                    <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
-                </ul>
-            </li>
-            <li><a href="./arrangementer.html">Arrangementer</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
+    <nav>
+        <div class="navi nav-telefon">
+            <a href="./index.html">
+                <img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
+            <label for="toggle" class="burger">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-xmark icon-x"></i>
+            </label>
+        </div>
     </nav>
 
     <div class="burger-menu">
@@ -70,7 +32,7 @@
             <li class="dropdown">
                 <input type="checkbox" id="toggle-klub">
                 <div class="menu-row">
-                    <a href="#">Om Klubben</a>
+                    <a href="./omKlubben.html">Om Klubben</a>
                     <label for="toggle-klub" class="toggle-knap"></label>
                 </div>
                 <ul class="drop-menu">
@@ -107,15 +69,58 @@
             <li class="li-pad"><a href="./kontakt.html">Kontakt</a></li>
         </ul>
     </div>
+
+    <!-- Navigation til Desktop -->
+    <nav>
+        <div class="navi nav-desktop">
+            <a href="./index.html"><img src="./assets/img/klub_logo_white.png" alt="Hjørring Jiu-Jitsu Klub Logo"
+                    loading="lazy"></a>
+            <ul class="nav-menu">
+                <li class="dropdown-desk">
+                    <!-- Tilføj class="active" til den aktive side  -->
+                    <a href="./omKlubben.html">Om Klubben
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./intruktoerer.html">Instruktører</a></li>
+                        <li><a href="./tosenryu.html">Tosenryu</a></li>
+                        <li><a href="./venskabsklubber.html">Venskabsklubber</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./traening.html">Hold og Træning
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./udstyr.html">Udstyr</a></li>
+                        <li><a href="./medlemskab.html">Medlemskab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-desk">
+                    <a href="./om_jiu-jitsu.html" class="active">Om Jiu-Jitsu
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu three">
+                        <li><a href="./budoregler.html">Budoregler</a></li>
+                        <li><a href="./baeltefarver.html">Bæltefarver og Graduering</a></li>
+                        <li><a href="./jiu-jitsu_historie.html">Jiu-Jitsuens Historie</a></li>
+                    </ul>
+                </li>
+                <li><a href="./arrangementer.html">Arrangementer</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
     <Header>
-        <img class="headerimg" loading="lazy" src="./assets/img/graduering.jpg"
-            alt="Et billede af flere klubber samlet til World Alliance of Martial Arts kongress.">
-    </Header>
-    <main>
+        <img loading="lazy" src="./assets/img/hjorring-jiu-jitsu-klub-graduation-certificate.webp"
+            alt="Graduering i Hjørring Jiu-Jitsu Klub, hvor medlemmer viser certifikater efter bestået graduering. - © Hjørring Jiu-Jitsu Klub">
         <h1>Bæltefarver og Graduering</h1>
         <div class="border"></div>
-        <section class="gradueringteksten">
-            <section class="gradtextsection">
+    </Header>
+    <main>
+        <div class="gradueringteksten">
+            <div class="gradtextdiv">
                 <p class="toptext">Efter endt prøve til begynderholdet har man gjort sig fortjent til det hvide bælte,
                     træner man derefter
                     regelmæssigt vil man være i stand til at få sit gule bælte efter ca. 6 måneder.</p>
@@ -137,8 +142,8 @@
                     der
                     afgør om man er klar til at gå til prøven på et nyt bælte.</p>
 
-            </section>
-            <section class="gradtextsection2">
+            </div>
+            <div class="gradtextdiv2">
                 <p>Hvis man gerne vil fortsætte med at stige i graderne, så er rejsen ikke slut efter man har opnået det
                     sorte bælte. </p>
                 <p>Herefter kan man stige i Dan graderne, som er en betegnelse for mesterskabs grad. </p>
@@ -149,51 +154,52 @@
                 <p>Det tager som sagt lang tid og dedikation til disse bæltegrader, men her i klubben er vi heldige at
                     have
                     Dan mestre af fantastisk kaliber som vores instruktører.</p>
-            </section>
-            <div class="belts">
+            </div>
+            <div class="img-wrap belts">
                 <img src="./assets/img/COLOURBOX31199102.jpg" alt="Et billede af alle de forskellige farver af bælter.">
             </div>
-            <div class="sommerlejr2">
+            <div class="img-wrap">
                 <img class="sommerlejr2" src="./assets/img/sommerlejr2.png" alt="">
             </div>
-        </section>
-        <section class="relatedarticles">
-            <article class="articles">
+        </div>
+        <div class="kontekst">
+            <article class="kort">
                 <h2>Budoregler</h2>
                 <p>I klubben følger vi nogle bestemte regler for at opretholde vores værdier.</p>
-                <a href="./budoregler.html">Budoregler</a>
+                <a href="./budoregler.html">Læs om budoreglerne</a>
             </article>
-
-            <article class="articles2">
-                <h2>Jiu-Jitsu Historie</h2>
-                <p>Nysgerrig på oprindelsen af Jiu-Jitsu? Her kan du læse mere om det.</p>
-                <a href="./jiu-jitsu_historie.html">Jiu-jitsu Historie</a>
+            <article class="kort">
+                <h2>Jiu-Jitsuens Historie</h2>
+                <p>Er du nysgerrig på oprindelsen af Jiu-Jitsu?</p>
+                <p>Læs om hele historien her.</p>
+                <a href="./jiu-jitsu_historie.html">Jiu-Jitsuens historie</a>
             </article>
-        </section>
-
+        </div>
     </main>
     <footer>
-        <div class="footer-telefon">
-            <a href="#forside" class="img"><img src="./assets/img/klub_logo_white.png"
+        <div class="foot">
+            <a href="./index.html" class="img"><img src="./assets/img/klub_logo_white.png"
                     alt="Hjørring Jiu-Jitsu Klub Logo"></a>
-            <div class="tider">
-                <h3>Træningstider</h3>
-                <div class="dag">
-                    <p>Tirsdag:</p>
-                    <p>18:00 - 20:00</p>
+            <div class="info">
+                <div class="tider">
+                    <h3>Træningstider</h3>
+                    <div class="dag">
+                        <p>Tirsdag:</p>
+                        <p>18:00 - 20:00</p>
+                    </div>
+                    <div class="dag">
+                        <p>Torsdag:</p>
+                        <p>18:00 - 20:00</p>
+                    </div>
                 </div>
-                <div class="dag">
-                    <p>Torsdag:</p>
-                    <p>18:00 - 20:00</p>
+                <div class="adresse">
+                    <h3>Adresse</h3>
+                    <p>Buen 4, 1. sal, 9800 Hjørring</p>
                 </div>
-            </div>
-            <div class="adresse">
-                <h3>Adresse</h3>
-                <p>Buen 4, 1. sal, 9800 Hjørring</p>
-            </div>
-            <div class="kontakt">
-                <h3>Kontakt</h3>
-                <a href="tel:+45-68-22-31-27">+45 68 22 31 27</a>
+                <div class="kontakt">
+                    <h3>Kontakt</h3>
+                    <a href="tel:+45-68-22-31-27">+45 68 22 31 27</a>
+                </div>
             </div>
             <ul class="some">
                 <li><a href="https://www.facebook.com/groups/484235388306687/" target="_blank"><i
@@ -201,10 +207,14 @@
                 <li><a href="https://www.instagram.com/hjoerring_jiu_jitsu/" target="_blank"><i
                             class="fa-brands fa-instagram"></i></a></li>
             </ul>
+
         </div>
-        <div class="copyright">
-            <p>Copyright Hjørring Jiu-Jitsu klub 2024 ©</p>
-            <p>Alle rettigheder forbeholdes</p>
+        <div class="copyright copyright-telefon">
+            <p>Copyright Hjørring Jiu-Jitsu klub 2024 </p>
+            <p>© Alle rettigheder forbeholdes</p>
+        </div>
+        <div class="copyright copyright-desk">
+            <p>Copyright Hjørring Jiu-Jitsu klub 2024 © Alle rettigheder forbeholdes</p>
         </div>
     </footer>
 </body>

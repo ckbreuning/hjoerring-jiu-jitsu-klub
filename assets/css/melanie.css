@@ -10,115 +10,56 @@
 }
 
 /* Typography */
-
-h1 {
-    justify-self: center;
-    padding: var(--mdSpacer);
-    font-size: 50px;
-}
-
-p,
-li {
-    font-size: 24px;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-span {
-    font-weight: bold;
-}
-
 main {
-    padding: 0px var(--xlSpacer);
     justify-content: center;
     overflow-x: hidden;
-
 }
 
 /* Udstyr */
 
-.hero img {
-    width: 100%;
-    object-fit: cover;
-    height: 50vh;
-}
-
-
 .usection1 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: var(--xlSpacer);
-}
-
-.usection1 img {
-    max-width: 50%;
-    margin-top: -55px;
-}
-
-.usection article {
-    max-width: 500px;
-
-}
-
-
-.usection2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: var(--mdSpacer);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--smSpacer);
     margin-bottom: var(--mdSpacer);
-    gap: 1rem;
 }
 
-.usection2 h2 {
-    text-align: center;
-    font-size: 35px;
-}
-
-.usection2 article {
+.udstyr {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    max-width: 50%;
-    border: 1px solid black;
-    padding: var(--smSpacer);
-    border-radius: 10px;
-    width: 650px !important;
-
+    gap: var(--smSpacer);
 }
 
-.usection2 article p {
-    margin-top: var(--smSpacer);
-    max-width: 500px;
-    text-align: center;
-    margin-bottom: var(--mdSpacer);
+.udstyr ul {
+    list-style: none;
 }
 
-.usection2 article a {
-    text-decoration: none;
-    background-color: var(--red);
-    color: white;
-    font-weight: bold;
-    margin-top: var(--smSpacer);
-    padding: 5px var(--smSpacer);
-    text-align: center;
-    max-width: 200px;
-    margin-top: auto;
+.usection1 .img-wrap {
+    margin: 0;
+}
+
+.img-wrap img {
+    width: 100%;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.img-wrap::after {
+    top: 0px;
+    bottom: auto;
 }
 
 /* Instruktøre */
 
 .in {
     display: flex;
-    margin-top: var(--mdSpacer);
+    margin-bottom: var(--mdSpacer);
 }
 
 .in img {
     border-radius: 50%;
     width: 100%;
-    border: 1px solid var(--eerieBlack) ;
+    border: 1px solid var(--eerieBlack);
 }
 
 .in figcaption {
@@ -135,15 +76,13 @@ form {
     border: 1px solid var(--eerieBlack);
     display: flex;
     flex-direction: column;
-    padding: 0 var(--smSpacer) var(--smSpacer);
-    margin-bottom: var(--smSpacer);
-    gap: 5px;
+    padding: var(--smSpacer);
+    gap: var(--smSpacer);
 }
 
 label {
     font-weight: bold;
     color: var(--blackOlive);
-    margin: 10px 0 0;
 }
 
 textarea {
@@ -173,7 +112,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-form{
+form {
     background-color: var(--white);
 }
 
@@ -181,6 +120,16 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--smSpacer);
+}
+
+.norm-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.norm-row>input {
+    width: 100%;
 }
 
 .form-row>div>input[type="text"] {
@@ -193,41 +142,86 @@ form{
     gap: 5px;
 }
 
+.kontekst h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.kontekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smSpacer);
+    width: 100%;
+}
+
+.news,
+.arrangement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kort {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid var(--blackOlive);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: var(--smSpacer);
+}
+
+.kort p {
+    width: 265px;
+    padding: 0;
+
+}
+
+.kort h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.75rem;
+    color: var(--blackOlive);
+}
+
+.kort a {
+    width: 220px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--red);
+    margin: auto auto var(--smSpacer);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
 @media (max-width:768px) {
 
-    h1{
+    h1 {
         font-size: 30px;
     }
 
     /* Udstyr */
-
     .usection1 {
         display: flex;
         flex-direction: column;
-
-    }
-
-
-    .usection1 img {
         margin: 0;
-        align-self: center;
-        max-width: 80%;
     }
 
-    .usection2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--smSpacer);
+    .usection1 .img-wrap {
+        margin-bottom: var(--mdSpacer);
     }
 
-    .usection2 h2{
-        font-size: 25px;
-    }
-
-    .usection2 article {
-        max-width: 100%;
-
+    .img-wrap::after {
+        bottom: 0px;
+        top: auto;
     }
 
     /* Intruktøre */
@@ -240,36 +234,29 @@ form{
     }
 
 
-main{
-    padding: 10px;
-    overflow-x: hidden;
-}
+    .in img {
+        max-width: 50%;
+        justify-self: center;
+    }
 
-.in img{
-    max-width: 50%;
-    justify-self: center;
-}
-}
-
-
-@media (max-width:375px){
-
-    .form-row{
+    .kontekst {
         display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
     }
 
-    h1{
-       padding:var(--smSpacer);
+    .news h2,
+    .arrangement h2 {
+        padding-left: 0;
     }
 
-   
-
-    p{
-        margin-top: 0px;
-        font-size: 20px;
-        text-align: justify;
-    }
 }
 
+
+@media (max-width:404px) {
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--smSpacer);
+    }
+}
