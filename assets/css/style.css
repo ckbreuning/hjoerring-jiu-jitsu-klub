@@ -68,6 +68,10 @@ h1 {
     padding: var(--smSpacer) var(--smSpacer) 0;
 }
 
+header img {
+    width: 100%;
+}
+
 /* Navigation til Telefon */
 nav {
     background: var(--eerieBlack);
@@ -157,9 +161,6 @@ nav {
     transform: translateX(0);
     background: var(--eerieBlack);
 }
-
-
-
 
 .side-menu {
     list-style: none;

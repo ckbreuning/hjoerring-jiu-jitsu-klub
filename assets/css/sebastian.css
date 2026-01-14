@@ -17,13 +17,8 @@ img {
 }
 
 /* Header image */
-
-.headerimg {
+header img {
     width: 100%;
-    height: 300px;
-    margin: auto;
-    object-fit: cover;
-    object-position: center;
 }
 
 /* Main */

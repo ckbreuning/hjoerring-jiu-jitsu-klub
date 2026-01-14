@@ -15,19 +15,6 @@ body {
 }
 
 /* Om jiu-jitsu */
-.om_jj_header {
-    max-height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.om_jj_header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .om_jj_indhold .img-wrap {
     height: 100%;
     margin-bottom: var(--mdSpacer);
@@ -54,18 +41,6 @@ body {
 
 
 /* Jiu-jitsu historie */
-.jj_historie_header {
-    max-height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.jj_historie_header img {
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 .jj_historie_tekst1,
 .jj_historie_tekst2,
 .jj_historie_tekst3,
@@ -81,20 +56,6 @@ body {
 }
 
 /* Tosenryu */
-.tosenryu_header {
-    max-height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.tosenryu_header img {
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
-
 .tosenryu_indhold {
     display: flex;
     flex-direction: column;
