@@ -171,6 +171,10 @@ details[open] summary::after {
     gap: 5px;
 }
 
+.om-klubben .img-wrap img {
+    height: 310px;
+}
+
 .img-wrap.fit {
     height: auto;
     width: fit-content;
@@ -402,7 +406,6 @@ details[open] summary::after {
     .om-jiu-jitsu .img-wrap {
         grid-column: 1;
         grid-row: 1;
-        margin: 0 0 0 10px;
         flex: 1;
     }
 
@@ -414,6 +417,10 @@ details[open] summary::after {
 
     .om-jiu-jitsu .img-wrap img {
         object-position: 0 45%;
+    }
+
+    .om-klubben .img-wrap img {
+        height: 100%;
     }
 
     .slideshow {
@@ -471,4 +478,7 @@ details[open] summary::after {
         grid-column: 2;
     }
 
+    .hold img {
+        object-position: 0 90%;
+    }
 }
