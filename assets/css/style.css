@@ -21,12 +21,14 @@ a {
 
 body {
     background-image: url(../img/hjorring-jiu-jitsu-klub-main-background.svg);
+    /* © Colourbox */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #jjh {
     background-image: url(../img/hjorring-jiu-jitsu-klub-secondary-background.svg);
+    /* © Colourbox */
 }
 
 /* Variables */
